@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #fafafa;
+  }
+
+main {
+    flex: 1 0 auto;
+}
+
+.background-login
+{
+    background: url('/images/stefan-stefancik-257625-unsplash.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pagination li {
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 2px;
+  text-align: center;
+  vertical-align: center;
+  height: 30px;
+  width: 30px;
+}
+
+.pagination li a {
+  color: #444;
+  display: inline-block;
+  font-size: 20px;
+  padding: 0 10px;
+  line-height: 30px;
+}
+
+.pagination li.active {
+  background-color: #26a69a;
+}
+
+.pagination li i {
+  font-size: 20px;
+}
