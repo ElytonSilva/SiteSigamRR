@@ -1,9 +1,9 @@
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 
-======================================================
-                    TUTORIAL
-======================================================
+---------------------------------------------        
+       TUTORIAL
+----------------------------------------------
 Segue os Comandos
 
 Altere o database.php de acordo com as informações do seu banco de dados 
