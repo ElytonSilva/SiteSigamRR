@@ -1,7 +1,6 @@
-======================================================
+======================
   TUTORIAL
-======================================================
-Segue os Comandos
+=====================
 
 Altere o database.php de acordo com as informações do seu banco de dados 
 
