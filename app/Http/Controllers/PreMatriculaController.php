@@ -14,7 +14,7 @@ class PreMatriculaController extends Controller
      */
     public function index()
     {
-       
+        return view('dashboard.prematricula.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class PreMatriculaController extends Controller
      */
     public function create()
     {
-        return view('dashboard.prematricula.index');
+        
     }
 
     /**

@@ -16,7 +16,8 @@ mix.combine([
     'resources/assets/js/jquery.mask.js',
     'resources/assets/js/materialize.js',
     'resources/assets/js/init.js',
-    'resources/assets/js/add.js'
+    'resources/assets/js/add.js',
+    'resources/assets/js/gerarsenha.js'
 ], 'public/js/app.js');
 
 mix.combine([

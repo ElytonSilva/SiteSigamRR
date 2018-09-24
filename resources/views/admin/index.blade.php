@@ -46,19 +46,18 @@
         </div>
         @endcan
 
-        @can('boletim-view')
+
         <div class="col s12 m6">
-            <div class="card indigo darken-2">
+            <div class="card red darken-2">
                 <div class="card-content white-text">
-                    <span class="card-title">Boletim Escolar</span>
-                    <p>Visualizar Boletim Escolar</p>
+                    <span class="card-title">Pré- Matricula</span>
+                    <p>Realizar Pré-Matricula</p>
                 </div>
                 <div class="card-action">
-                    <a href="#">Visualizar</a>
+                    <a href="{{route('prematricula.index')}}">Visualizar</a>
                 </div>
             </div>
         </div>
-        @endcan
         
         @can('matricula-view')
         <div class="col s12 m6">
@@ -89,33 +88,6 @@
         </div>
         @endcan
 
-        @can('declaracao-view')
-        <div class="col s12 m6">
-            <div class="card  grey darken-1">
-                <div class="card-content white-text">
-                    <span class="card-title">Declaração</span>
-                    <p>Solicitar Declaração Escolar</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">Visualizar</a>
-                </div>
-            </div>
-        </div>
-        @endcan
-
-        @can('transferencia-view')
-        <div class="col s12 m6">
-            <div class="card deep-orange darken-4">
-                <div class="card-content white-text">
-                    <span class="card-title">Transferência</span>
-                    <p>Solicitar Transferência</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">Visualizar</a>
-                </div>
-            </div>
-        </div>
-        @endcan
 
 
 
