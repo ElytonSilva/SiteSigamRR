@@ -39,7 +39,7 @@
     <div class="row">
 
         <div class="col s12 m6">
-            <div class="card red darken-2">
+            <div class="card light-blue darken-3">
                 <div class="card-content white-text">
                     <span class="card-title">Pré- Matricula</span>
                     <p>Realizar Pré-Matricula</p>
@@ -64,7 +64,7 @@
 
 
         <div class="col s12 m6">
-            <div class="card  light-blue darken-1">
+            <div class="card teal darken-3">
                 <div class="card-content white-text">
                     <span class="card-title">Renovação</span>
                     <p>Renovar Matricula</p>
