@@ -6,6 +6,7 @@
             <div class="card-panel white">
                 <h4 class="center">Formulário de Pré-Matricula</h4>
                 <div class="row"></div>
+                <div class="row"></div>
                 <div class="row">
                     <form class="form-horizontal" id="regForm" action="#" method="post">
                         <div class="row">
@@ -52,7 +53,7 @@
                                 <input id="icon_telephone" type="text" class="validate">
                                 <label for="icon_telephone">N° CPF do Pai</label>
                             </div>
-                            
+
                             <div class="input-field col s4">
                                 <i class="material-icons prefix">code</i>
                                 <label>Senha Gerada: </label>
@@ -63,19 +64,24 @@
                                 </button>
                             </div>
 
+                            <div class="row"></div>
+                            <div class="row"></div>
+                            <div class="input-field col s4">
 
-                            <div class="row">
+                                <b>Documentos Obrigatórios: </b>
+
+                                RG, CPF, Comprovante de Residência, Histórico Escolar.
                             </div>
-                            <div class="col s12">
-                                <button class="btn orange darken-4 btn-info right">Salvar
-                                    <i class="material-icons left">save</i>
-                                </button>
-                            </div>
+
                         </div>
-
+                        <div class="row">
+                        </div>
+                        <div class="col s12">
+                            <button class="btn orange darken-4 btn-info right">Salvar
+                                <i class="material-icons left">save</i>
+                            </button>
+                        </div>
                     </form>
-
-
                 </div>
             </div>
         </div>
