@@ -104,7 +104,7 @@
                                 <option value="" disabled selected>Selecione uma opção</option>
                                 <option value="Branca" {{ old('cor') == 'Branca'? 'selected' : '' }}>Branca</option>
                                 <option value="Parda" {{ old('cor') == 'Parda'? 'selected' : '' }}>Parda</option>
-                                <option value="Indigina" {{ old('cor') == 'Indigina'? 'selected' : '' }}>Masculino>Indigina</option>
+                                <option value="Indígina" {{ old('cor') == 'Indígina'? 'selected' : '' }}>Indígina</option>
                                 <option value="Negra" {{ old('cor') == 'Negra'? 'selected' : '' }}>Negra</option>
                                 <option value="Não Declarado" {{ old('cor') == 'Não Declarado'? 'selected' : '' }}>Não Declarado</option>
                             </select>
