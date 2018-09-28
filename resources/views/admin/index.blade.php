@@ -14,7 +14,7 @@
                     <p>Alterar Dados de Perfil</p>
                 </div>
                 <div class="card-action">
-                    <a href="#">Visualizar</a>
+                    <a href="#" style="color:white; font-weight:bold;">Entrar</a>
                 </div>
             </div>
         </div>
@@ -27,7 +27,7 @@
                     <p>Listar Usuario cadastrados</p>
                 </div>
                 <div class="card-action">
-                    <a href="{{route('usuarios.index')}}">Visualizar</a>
+                    <a href="{{route('usuarios.index')}}" style="color:white; font-weight:bold;">Entrar</a>
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@
                     <p>Configurações de Acesso</p>
                 </div>
                 <div class="card-action">
-                    <a href="{{route('papeis.index')}}">Visualizar</a>
+                    <a href="{{route('papeis.index')}}" style="color:white; font-weight:bold;">Entrar</a>
                 </div>
             </div>
         </div>
@@ -54,7 +54,7 @@
                     <p>Realizar Pré-Matricula</p>
                 </div>
                 <div class="card-action">
-                    <a href="{{route('prematricula.index')}}">Visualizar</a>
+                    <a href="{{route('prematricula.index')}}" style="color:white; font-weight:bold;">Entrar</a>
                 </div>
             </div>
         </div>
@@ -67,7 +67,7 @@
                     <p>Painel de Matriculados</p>
                 </div>
                 <div class="card-action">
-                    <a href="{{route('matricula.index')}}">Visualizar</a>
+                    <a href="{{route('matricula.index')}}" style="color:white; font-weight:bold;">Entrar</a>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@
                     <p>Renovar Matricula</p>
                 </div>
                 <div class="card-action">
-                    <a href="#">Visualizar</a>
+                    <a href="#" style="color:white; font-weight:bold;">Entrar</a>
                 </div>
             </div>
         </div>

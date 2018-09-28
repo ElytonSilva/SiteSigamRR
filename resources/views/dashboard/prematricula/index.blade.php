@@ -31,13 +31,13 @@
 
 
                             <div class="input-field col s6">
-                                <i class="material-icons prefix">contact_phone</i>
+                                <i class="material-icons prefix">call</i>
                                 <input id="icon_telephone" type="text" class="validate">
                                 <label for="icon_telephone">Telefone da Mãe</label>
                             </div>
 
                             <div class="input-field col s6">
-                                <i class="material-icons prefix">contact_phone</i>
+                                <i class="material-icons prefix">call</i>
                                 <input id="icon_telephone" type="text" class="validate">
                                 <label for="icon_telephone">Telefone do Pai</label>
                             </div>
