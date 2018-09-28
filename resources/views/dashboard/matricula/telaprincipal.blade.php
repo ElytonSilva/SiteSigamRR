@@ -14,7 +14,7 @@
                     <p>Cadastrar Alunos</p>
                 </div>
                 <div class="card-action">
-                    <a href="{{route('matricula.create')}}">Visualizar</a>
+                    <a href="{{route('matricula.create')}}" style="color:white; font-weight:bold;">Entrar</a>
                 </div>
             </div>
         </div>
@@ -25,7 +25,7 @@
                     <p>Exibir Alunos Cadastrados</p>
                 </div>
                 <div class="card-action">
-                    <a href="{{route('matricula.lista')}}">Visualizar</a>
+                    <a href="{{route('matricula.lista')}}" style="color:white; font-weight:bold;">Entrar</a>
                 </div>
             </div>
         </div>

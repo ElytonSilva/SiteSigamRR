@@ -45,7 +45,7 @@
                     <p>Realizar Pré-Matricula</p>
                 </div>
                 <div class="card-action">
-                    <a href="#">Visualizar</a>
+                    <a href="#" style="color:white; font-weight:bold;">Entrar</a>
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@
                     <p>Realizar Matricula</p>
                 </div>
                 <div class="card-action">
-                    <a href="#">Visualizar</a>
+                    <a href="#" style="color:white; font-weight:bold;">Entrar</a>
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@
                     <p>Renovar Matricula</p>
                 </div>
                 <div class="card-action">
-                    <a href="#">Visualizar</a>
+                    <a href="#" style="color:white; font-weight:bold;">Entrar</a>
                 </div>
             </div>
         </div>
