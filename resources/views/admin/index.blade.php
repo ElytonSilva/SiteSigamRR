@@ -1,4 +1,4 @@
-@extends('layouts.app') @section('content') 
+@extends('layouts.app') @section('content')
 <div class="container">
     <div class="row center">
         <h2>Painel Administrativo</h2>
@@ -14,11 +14,11 @@
                     <p>Alterar Dados de Perfil</p>
                 </div>
                 <div class="card-action">
-                    <a href="#" style="color:white; font-weight:bold;">Entrar</a>
+                    <a href="{{route('perfil.index')}}" style="color:white; font-weight:bold;">Entrar</a>
                 </div>
             </div>
         </div>
-        
+
         @can('usuario-view')
         <div class="col s12 m6">
             <div class="card cyan darken-2">
@@ -31,7 +31,7 @@
                 </div>
             </div>
         </div>
-       @endcan
+        @endcan
         @can('papel-view')
         <div class="col s12 m6">
             <div class="card teal darken-2">
@@ -46,7 +46,7 @@
         </div>
         @endcan
 
-
+        @can('prematricula-view')
         <div class="col s12 m6">
             <div class="card light-blue darken-3">
                 <div class="card-content white-text">
@@ -58,7 +58,8 @@
                 </div>
             </div>
         </div>
-        
+        @endcan
+
         @can('matricula-view')
         <div class="col s12 m6">
             <div class="card red darken-2">
@@ -72,7 +73,7 @@
             </div>
         </div>
         @endcan
-        
+
 
         @can('renovacao-view')
         <div class="col s12 m6">

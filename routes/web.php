@@ -68,6 +68,9 @@ Route::group(['middleware' => 'auth','prefix' => 'admin'], function () {
     Route::get('/prematricula/criar',['as'=>'prematricula.index','uses'=>'PreMatriculaController@index']);
   //Route::post('/prematricula/salvar',['as'=>'prematricula.store','uses'=>'PreMatriculaController@store']);
     Route::post('matricula/listar/alunoscadastrados/busca',['as'=>'matricula.buscar','uses'=> 'MatriculaController@busca']);
+	
+	Route::get('perfil/atualizar', ['as'=>'perfil.index','uses'=>'Site\SiteController@perfil']);
+	Route::put('perfil/atualizar', ['as'=>'perfil.index.update','uses'=>'Site\SiteController@perfilUpdate']);
 });
 
 

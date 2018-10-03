@@ -65,6 +65,16 @@ class PermissaoSeeder extends Seeder
             'nome' =>'matricula-delete',
             'descricao' =>'Deletar matricula' 
         ]); 
+        
+        $perfil1 = Permissao::firstOrCreate([
+            'nome' =>'perfil-view',
+            'descricao' =>'Acesso ao Perfil.'
+        ]);
+          
+        $perfil2 = Permissao::firstOrCreate([
+            'nome' =>'perfil-edit',
+            'descricao' =>'Editar Perfil.'
+        ]);
 
         $boletim1 = Permissao::firstOrCreate([
             'nome' =>'boletim-view',
