@@ -66,11 +66,22 @@
 
                             <div class="row"></div>
                             <div class="row"></div>
-                            <div class="input-field col s4">
+                            <div class="row">
+                                <div class="col s12 m5 ">
+                                    <div class="card-panel white ">
+                                        <b class="black-text">Documentos Necessários para Matrícula ? </b></br></br>
 
-                                <b>Documentos Obrigatórios: </b>
-
-                                RG, CPF, Comprovante de Residência, Histórico Escolar.
+                                        <span>Xérox do Histórico Escola ou Declaração co notas;</span>
+                                        <span>Xérox do RG ou Certidão de Nascimento e CPF;</span>
+                                        <span>Xérox do comprovante de residência;</span>
+                                        <span>Xérox do cartão de vacina;</span>
+                                        <span>01 Foto 3x4;</span>
+                                        <span>Xérox do RG do responsável pelo aluno;</span>
+                                        <span>Xérox do Laudo do comprobatório de Defiência do aluno, se for o caso;</span>
+                                        <span>Xérox do Cartão do Programa Bolsa Família e RG do titular do cartão;</span>
+                                        
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
