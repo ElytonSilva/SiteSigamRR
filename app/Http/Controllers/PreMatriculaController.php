@@ -14,7 +14,20 @@ class PreMatriculaController extends Controller
      */
     public function index()
     {
-        return view('dashboard.prematricula.index');
+        $identificador = Auth()->User()->id;
+        $saida = strval($identificador);
+        switch(strlen($saida)){
+            case 1:{
+                $saida = "000".$saida;
+            }break;
+            case 2:{
+                $saida = "00".$saida;
+            }break;
+            case 3:{
+                $saida = "0".$saida;
+            }break;
+        }
+        return view('dashboard.prematricula.index', compact('saida'));
     }
 
     /**

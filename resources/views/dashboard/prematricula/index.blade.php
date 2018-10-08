@@ -57,11 +57,11 @@
                             <div class="input-field col s4">
                                 <i class="material-icons prefix">code</i>
                                 <label>Senha Gerada: </label>
-                                <input type="text" id="textsenha" name="contato" class="validate">
+                                <input disabled="true" type="text" id="textsenha" name="contato" class="validate" value="{{ gerar_codigo($saida) }}">
 
-                                <button type="submit" id="gerarsenha" class="waves-effect waves-light btn">
+                                <a type="button" id="gerarsenha" class="waves-effect waves-light btn" href="{{ route('prematricula.index') }}">
                                     <i class="material-icons left">vpn_key</i>Gerar</a>
-                                </button>
+                                </a>
                             </div>
 
                             <div class="row"></div>
