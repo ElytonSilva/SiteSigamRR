@@ -19,7 +19,7 @@
   <div class="footer-copyright">
     <div class="container">
       <a class="grey-text text-lighten-4 left" href="#!">© 2018 Copyright Text</a>
-      <a class="grey-text text-lighten-4 right" href="#!">SIGAMRR</a>
+      <a class="grey-text text-lighten-4 right" href="#!">SMEF</a>
     </div>
   </div>
 </footer>
