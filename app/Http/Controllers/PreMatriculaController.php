@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\PreMatricula;
 use App\User;
+use App\Http\Requests\PreMatriculaRequest;
 class PreMatriculaController extends Controller
 {
     /**
@@ -46,18 +47,19 @@ class PreMatriculaController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
+    public function store(PreMatriculaRequest $request)
+    {   
+
         $user = Auth()->user();
         
-        
         $dados = $request->all();
-        dd($dados);
-
+        
+        //dd($dados);
         $prematricula = PreMatricula::create($dados);
-        $dados['prematricula_id'] = $prematricula->id;
 
-        dd($prematricula);
+       // dd($prematricula);
+        return view('dashboard.prematricula.confirmacao',compact('caminhos'));
+
     }
 
     /**
