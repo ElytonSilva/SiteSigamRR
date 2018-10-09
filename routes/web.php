@@ -14,24 +14,24 @@
 Route::get('/', function () {
     $slides = [
         (object)[
-            'titulo'=> 'SIGAMRR',
-            'descricao'=>'Se inscreva-se ',
+            'titulo'=> 'ENSINO',
+            'descricao'=>'A tecnologia otimizando tarefas',
             'url'=> '#link',
-            'imagem'=> 'https://d2tycqyw09ngo1.cloudfront.net/be-content/uploads/2017/02/14175326/As-15-principais-linguagens-de-programa%C3%A7%C3%A3o-no-mundo.png'
+            'imagem'=> 'imagens/slide/slide_01.jpg'
         ],
 
         (object)[
-            'titulo'=> 'Programador',
-            'descricao'=>'Sempre deve ter a solução de um problema',
+            'titulo'=> 'COMUNIDADE',
+            'descricao'=>'Disponivel através de várias plataformas',
             'url'=> '#link',
-            'imagem'=> 'http://entradafranca.com.br/wp-content/uploads/2016/11/workshop-carreira-programador.png'
+            'imagem'=> 'imagens/slide/slide_02.jpg'
         ],
 
         (object)[
-            'titulo'=> 'Venha ser a diferença no mundo ',
-            'descricao'=>'Seja mundial e nao regional ',
+            'titulo'=> 'TECNOLOGIA',
+            'descricao'=>'Para transformar e mudar a vida das pessoas',
             'url'=> '#link',
-            'imagem'=> 'http://blog.elgscreen.com/wp-content/uploads/2017/06/curso-de-programa%C3%A7%C3%A3o-online-02.jpg'
+            'imagem'=> 'imagens/slide/slide_03.jpg'
         ]
     ];
     return view('dashboard.index', compact('slides'));

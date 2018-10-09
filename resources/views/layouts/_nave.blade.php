@@ -1,6 +1,6 @@
 <nav class="blue-grey darken-4">
   <div class="nav-wrapper container">
-    <a href="{{ url('/') }}"><img class="responsive-img" src="/imagens/IMG-20180314-WA0011.png" title="Início - SIGAMRR"</i></a>
+    <a href="{{ url('/') }}"><img class="responsive-img" src="/imagens/IMG-20180314-WA0011.png" title="Início - SNEF"</i></a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       @if (Auth::guest())
           <li><a href="{{ url('/login') }}">Entrar</a></li>

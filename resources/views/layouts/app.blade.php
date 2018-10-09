@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>SIGAMRR</title>
+    <title>SMEF</title>
 
     <!-- Styles -->
     <link rel="icon" type="imagens/ico" href="/imagens/IMG-20180314-WA0011.ico" />

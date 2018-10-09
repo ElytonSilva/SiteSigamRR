@@ -16,9 +16,11 @@ class PapelController extends Controller
      */
     public function index()
     {
+        /*
         if(Gate::denies('papel-view')){
             abort(403,"Acesso não autorizado");
         }
+        */
         $registros = Papel::all();
         $caminhos = [
             ['url'=>'/admin','titulo'=>'Painel'],
@@ -29,9 +31,11 @@ class PapelController extends Controller
 
     public function permissao($id)
     {
+        /*
       if(Gate::denies('papel-view')){
             abort(403,"Acesso não autorizado");
-        }          
+        }
+        */          
       $papel = Papel::find($id);
       $permissao = Permissao::all();
       $caminhos = [
@@ -44,9 +48,11 @@ class PapelController extends Controller
 
     public function permissaoStore(Request $request,$id)
     {
+        /*
         if(Gate::denies('papel-edit')){
             abort(403,"Acesso não autorizado");
         }
+        */
         $papel = Papel::find($id);
         $dados = $request->all();
         $permissao = Permissao::find($dados['permissao_id']);
@@ -56,9 +62,11 @@ class PapelController extends Controller
 
     public function permissaoDestroy($id,$permissao_id)
     {
+        /*
       if(Gate::denies('papel-view')){
             abort(403,"Acesso não autorizado");
-        }  
+        }
+        */ 
       $papel = Papel::find($id);
       $permissao = Permissao::find($permissao_id);
       $papel->removePermissao($permissao);
@@ -71,9 +79,11 @@ class PapelController extends Controller
      */
     public function create()
     {   
+        /*
         if(Gate::denies('papel-create')){
             abort(403,"Acesso não autorizado");
         }
+        */
         $caminhos = [
             ['url'=>'/admin','titulo'=>'Painel'],
             ['url'=>route('papeis.index'),'titulo'=>'Papéis'],
@@ -91,9 +101,11 @@ class PapelController extends Controller
      */
     public function store(Request $request)
     {   
+        /*
         if(Gate::denies('papel-create')){
             abort(403,"Acesso não autorizado");
         }
+        */
         if($request['nome'] && $request['nome'] != "Admin"){
             Papel::create($request->all());
 
@@ -122,9 +134,11 @@ class PapelController extends Controller
      */
     public function edit($id)
     {
+        /*
         if(Gate::denies('papel-edit')){
             abort(403,"Acesso não autorizado");
         }
+        */
         if(Papel::find($id)->nome == "Admin"){
             return redirect()->route('papeis.index');
         }
@@ -149,9 +163,11 @@ class PapelController extends Controller
      */
     public function update(Request $request, $id)
     {
+        /*
         if(Gate::denies('papel-edit')){
             abort(403,"Acesso não autorizado");
         }
+        */
         if(Papel::find($id)->nome == "Admin"){
             return redirect()->route('papeis.index');
         }
@@ -170,9 +186,11 @@ class PapelController extends Controller
      */
     public function destroy($id)
     {
+        /*
         if(Gate::denies('papel-delete')){
             abort(403,"Acesso não autorizado");
         }
+        */
         if(Papel::find($id)->nome == "Admin"){
             return redirect()->route('papeis.index');
         }

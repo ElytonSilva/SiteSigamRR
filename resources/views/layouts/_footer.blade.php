@@ -2,11 +2,11 @@
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
-        <h5 class="white-text">SIGAMRR</h5>
-        <p class="grey-text text-lighten-4">O SIGAMRR é desenvolvido e licenciado pela NexusSoftware em parceria com o Colégio Militar Estadual Dr° Luiz Ritller Brito de Lucena</p>
+        <h5 class="white-text">SMEF</h5>
+        <p class="grey-text text-lighten-4">Sistema de Matrilcula do Colégio Militar Estadual Dr° Luiz Ritller Brito de Lucena</p>
       </div>
       <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Social</h5>
+        <h5 class="white-text">SOCIAL</h5>
         <ul>
           <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
           <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>

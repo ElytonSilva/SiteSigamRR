@@ -3,7 +3,7 @@
 
         @foreach($lista as $key =>$value)
         <li>
-            <img src="{{$value->imagem}}">
+            <img src="{{$value->imagem}}" class="img-responsive">
             <div class="caption center-align">
                 @if(isset($value->titulo))
                     <h3>"{{$value->titulo}}"</h3>
