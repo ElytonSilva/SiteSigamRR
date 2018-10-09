@@ -6,7 +6,7 @@
 
     @include('admin._caminho')
     <div class="row">
-
+        @can('perfil-view')
         <div class="col s12 m6">
             <div class="card indigo lighten-1">
                 <div class="row">
@@ -32,7 +32,9 @@
                 </div>
             </div>
         </div>
+        @endcan
 
+        @can('usuario-view')
         <div class="col s12 m6">
             <div class="card light-blue darken-3">
                 <div class="row">
@@ -58,6 +60,7 @@
                 </div>
             </div>
         </div>
+        @endcan
 
         @can('papel-view')
         <div class="col s12 m6">
@@ -171,6 +174,32 @@
         </div>
         @endcan
 
+
+        <div class="col s12 m6">
+            <div class="card light-blue accent-4">
+                <div class="row">
+                    <div class="col s8 m8">
+                        <div class="card-content white-text">
+                            <span class="card-title">Relatórios</span>
+                            <p>Exibir Dados de Pré-Matricula, e Lista de Renovações</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="{{route('relatorios.index')}}" style="color:white; font-weight:bold;">Entrar</a>
+                        </div>
+                    </div>
+                    <div class="col s4 m4">
+                        <img 
+                        class="img-responsive"
+                        src="imagens/icons/relatorio.png"
+                        style="
+                        position:relative; 
+                        float:right; 
+                        margin:15px;
+                        widht:90px; height:80px;">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
