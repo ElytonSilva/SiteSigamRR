@@ -94,15 +94,6 @@ Route::group(['middleware' => 'auth','prefix' => 'admin'], function () {
 
   /*-----------------------------------------------------------------------------------------------------------*/
 
-
-  /*-----------------------ROTAS DE RELATORIOS---------------------------------------------------------------*/
-
-  Route::get('relatorios/inicio',['as'=>'relatorios.index','uses'=>'RelatorioController@index']);
-  Route::get('relatorios/listar/cadastrados',['as'=>'relatorios.lista','uses'=> 'RelatorioController@lista']);
-  
-
-  /*------------------------------------------------------------------------------------------------------*/
-
   
   /*----------------------- ROTAS DE PERFIL ----------------------------------------------------------------------*/
 

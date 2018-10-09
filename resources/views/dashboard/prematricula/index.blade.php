@@ -71,7 +71,8 @@
 
                         <div class="input-field col s6 {{$errors->has('cpfmae') ? 'has-error' : ''}} ">
                             <i class="material-icons prefix">assignment_ind</i>
-                            <input id="icon_telephone" type="text" name="cpfmae" id="cpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" class="validate" value="{{old('cpfmae')}}">
+                            <input id="icon_telephone" type="text" name="cpfmae" id="cpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}"
+                                class="validate" value="{{old('cpfmae')}}">
                             <label for="icon_telephone">N° CPF da Mãe</label>
                             @if($errors->has('cpfmae'))
                             <span class="red-text">
@@ -82,7 +83,8 @@
 
                         <div class="input-field col s6 {{$errors->has('cpfpai') ? 'has-error' : ''}} ">
                             <i class="material-icons prefix">assignment_ind</i>
-                            <input id="icon_telephone" type="text" name="cpfpai" id="cpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" class="validate" value="{{old('cpfpai')}}">
+                            <input id="icon_telephone" type="text" name="cpfpai" id="cpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}"
+                                class="validate" value="{{old('cpfpai')}}">
                             <label for="icon_telephone">N° CPF do Pai</label>
                             @if($errors->has('cpfpai'))
                             <span class="red-text">
@@ -124,7 +126,7 @@
                         <div class="row">
                         </div>
                         <div class="col s12">
-                            <button type = "submit" class="btn orange darken-4 btn-info right">Salvar
+                            <button class="btn orange darken-4 btn-info right">Salvar
                                 <i class="material-icons left">save</i>
                             </button>
                         </div>

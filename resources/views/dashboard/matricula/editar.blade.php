@@ -105,9 +105,11 @@
                                 <option value="" disabled selected>Selecione uma opção</option>
                                 <option value="Branca" {{ old( 'cor', $matricula->cor) == 'Branca' ? 'selected' : '' }}>Branca</option>
                                 <option value="Parda" {{ old( 'cor', $matricula->cor) == 'Parda' ? 'selected' : '' }}>Parda</option>
-                                <option value="Indigina" {{ old( 'cor', $matricula->cor) == 'Indigina' ? 'selected' : ''}}>Indigina</option>
+                                <option value="Indigina" {{ old( 'cor', $matricula->cor) == 'Indigina' ? 'selected' : ''
+                                    }}>Indigina</option>
                                 <option value="Negra" {{ old( 'cor', $matricula->cor) == 'Negra' ? 'selected' : '' }}>Negra</option>
-                                <option value="Não Declarado" {{ old( 'cor', $matricula->cor) == 'Não Declarado' ? 'selected': '' }}>Não Declarado</option>
+                                <option value="Não Declarado" {{ old( 'cor', $matricula->cor) == 'Não Declarado' ? 'selected'
+                                    : '' }}>Não Declarado</option>
                             </select>
                             <label>Cor</label>
                             @if($errors->has('cor'))
