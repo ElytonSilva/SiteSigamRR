@@ -20809,7 +20809,8 @@ $(document).ready(function() {
    
     $('#cep').mask('00000-000');
     $("#rg").mask("99.999.999-9");
-    $('#cpf').mask('000.000.000-00', {reverse: true});
+	$('#cpf').mask('000.000.000-00', {reverse: true});
+	$('#cpftwo').mask('000.000.000-00', {reverse: true});
     $("#telefone").mask('(00) 0000-00009');
     $("#telefone1").mask('(00) 0000-00009');
 

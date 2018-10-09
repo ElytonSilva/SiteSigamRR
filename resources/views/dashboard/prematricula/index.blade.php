@@ -15,80 +15,45 @@
 
                         <div class="input-field col s6 {{$errors->has('nomemae') ? 'has-error' : ''}} ">
                             <i class="material-icons prefix">account_circle</i>
-                            <input type="text" name="nomemae" class="validate" value="{{old('nomemae')}}">
+                            <input type="text" name="nomemae" class="validate" value="{{old('nomemae')}}" required="" aria-required="true">
                             <label for="icon_prefix">Nome da Mãe do Aluno</label>
-                            @if($errors->has('nomemae'))
-                            <span class="red-text">
-                                <text>{{$errors->first('nomemae')}}</text>
-                            </span>
-                            @endif
                         </div>
 
                         <div class="input-field col s6 {{$errors->has('nomepai') ? 'has-error' : ''}} ">
                             <i class="material-icons prefix">account_circle</i>
-                            <input type="text" name="nomepai" class="validate" value="{{old('nomepai')}}">
+                            <input type="text" name="nomepai" class="validate" value="{{old('nomepai')}}" required="" aria-required="true">
                             <label for="icon_prefix">Nome do Pai do Aluno</label>
-                            @if($errors->has('nomepai'))
-                            <span class="red-text">
-                                <text>{{$errors->first('nomepai')}}</text>
-                            </span>
-                            @endif
                         </div>
 
                         <div class="input-field col s6 {{$errors->has('nomealuno') ? 'has-error' : ''}} ">
                             <i class="material-icons prefix">face</i>
-                            <input type="text" name="nomealuno" class="validate" value="{{old('nomealuno')}}">
+                            <input type="text" name="nomealuno" class="validate" value="{{old('nomealuno')}}" required="" aria-required="true">
                             <label for="icon_prefix">Nome do Filho(a)</label>
-                            @if($errors->has('nomealuno'))
-                            <span class="red-text">
-                                <text>{{$errors->first('nomealuno')}}</text>
-                            </span>
-                            @endif
                         </div>
 
 
                         <div class="input-field col s6 {{$errors->has('contatomae') ? 'has-error' : ''}} ">
                             <i class="material-icons prefix">call</i>
-                            <input id="icon_telephone" type="text" name="contatomae" class="validate" value="{{old('contatomae')}}">
-                            <label for="icon_telephone">Telefone da Mãe</label>
-                            @if($errors->has('contatomae'))
-                            <span class="red-text">
-                                <text>{{$errors->first('contatomae')}}</text>
-                            </span>
-                            @endif
+                            <input type="text" name="contatomae" id="telefone" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" class="validate" value = "{{old('contatomae')}}" required="" aria-required="true">
+                            <label>Telefone da mãe</label>
                         </div>
 
                         <div class="input-field col s6 {{$errors->has('contatopai') ? 'has-error' : ''}} ">
                             <i class="material-icons prefix">call</i>
-                            <input id="icon_telephone" type="text" name="contatopai" class="validate" value="{{old('contatopai')}}">
-                            <label for="icon_telephone">Telefone do Pai</label>
-                            @if($errors->has('contatopai'))
-                            <span class="red-text">
-                                <text>{{$errors->first('contatopai')}}</text>
-                            </span>
-                            @endif
+                            <input type="text" name="contatopai" id="telefone1" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" class="validate" value = "{{old('contatopai')}}" required="" aria-required="true">
+                            <label>Telefone do pai</label>
                         </div>
 
-                        <div class="input-field col s6 {{$errors->has('cpfmae') ? 'has-error' : ''}} ">
+                        <div class="input-field col s6 {{$errors->has('cpfmae') ? 'has-error' : ''}}">
                             <i class="material-icons prefix">assignment_ind</i>
-                            <input id="icon_telephone" type="text" name="cpfmae" id="cpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" class="validate" value="{{old('cpfmae')}}">
-                            <label for="icon_telephone">N° CPF da Mãe</label>
-                            @if($errors->has('cpfmae'))
-                            <span class="red-text">
-                                <text>{{$errors->first('cpfmae')}}</text>
-                            </span>
-                            @endif
+                            <input type="text" name="cpfmae" id= "cpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" class="validate" value = "{{old('cpfmae')}}" required="" aria-required="true">
+                            <label>N° CPF do Mãe</label>
                         </div>
 
-                        <div class="input-field col s6 {{$errors->has('cpfpai') ? 'has-error' : ''}} ">
+                        <div class="input-field col s6 {{$errors->has('cpfpai') ? 'has-error' : ''}}">
                             <i class="material-icons prefix">assignment_ind</i>
-                            <input id="icon_telephone" type="text" name="cpfpai" id="cpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" class="validate" value="{{old('cpfpai')}}">
-                            <label for="icon_telephone">N° CPF do Pai</label>
-                            @if($errors->has('cpfpai'))
-                            <span class="red-text">
-                                <text>{{$errors->first('cpfpai')}}</text>
-                            </span>
-                            @endif
+                            <input type="text" name="cpfpai" id= "cpftwo" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" class="validate" value = "{{old('cpfpai')}}" required="" aria-required="true">
+                            <label>N° CPF do Pai</label>
                         </div>
 
                         <div class="input-field col s4 ">
@@ -96,10 +61,7 @@
                             <label>Senha Gerada: </label>
 
                             <input type="text" id="textsenha" name="senha" class="validate" value="{{ gerar_codigo($saida) }}">
-
-                            <a type="button" id="gerarsenha" class="waves-effect waves-light btn" href="{{ route('prematricula.index') }}">
-                                <i class="material-icons left">vpn_key</i>Gerar</a>
-                            </a>
+                            
                         </div>
 
                         <div class="row"></div>

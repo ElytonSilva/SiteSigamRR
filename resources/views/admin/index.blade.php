@@ -181,7 +181,7 @@
                     <div class="col s8 m8">
                         <div class="card-content white-text">
                             <span class="card-title">Relatórios</span>
-                            <p>Exibir Dados de Pré-Matricula, e Lista de Renovações</p>
+                            <p>Pré-Matricula e Renovações</p>
                         </div>
                         <div class="card-action">
                             <a href="{{route('relatorios.index')}}" style="color:white; font-weight:bold;">Entrar</a>
@@ -194,8 +194,8 @@
                         style="
                         position:relative; 
                         float:right; 
-                        margin:15px;
-                        widht:90px; height:80px;">
+                        margin:10px;
+                        widht:98px; height:98px;">
                     </div>
                 </div>
             </div>

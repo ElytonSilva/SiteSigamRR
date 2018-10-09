@@ -1,11 +1,20 @@
 $(document).ready(function() {
     Materialize.updateTextFields();
     $('.slider').slider({full_width: true});
-   $('select').material_select();
+    $('select').material_select();
+
+    // for HTML5 "required" attribute
+    $("select[required]").css({
+        display: "inline",
+        height: 0,
+        padding: 0,
+        width: 0
+    });
    
     $('#cep').mask('00000-000');
     $("#rg").mask("99.999.999-9");
     $('#cpf').mask('000.000.000-00', {reverse: true});
+    $('#cpftwo').mask('000.000.000-00', {reverse: true});
     $("#telefone").mask('(00) 0000-00009');
     $("#telefone1").mask('(00) 0000-00009');
 
