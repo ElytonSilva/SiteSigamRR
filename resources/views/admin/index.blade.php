@@ -176,7 +176,7 @@
 
 
         <div class="col s12 m6">
-            <div class="card light-blue accent-4">
+            <div class="card brown darken-1">
                 <div class="row">
                     <div class="col s8 m8">
                         <div class="card-content white-text">
