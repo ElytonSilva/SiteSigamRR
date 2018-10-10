@@ -1,9 +1,6 @@
 @extends('layouts.app') @section('content') 
 <div class="container">
-    <div class="row center">
-        <h2>Painel do Cadastro de Matricula</h2>
-    </div>
-
+    <h5 class="center">Painel do Cadastro de Matricula</h5>
     @include('admin._caminho')
     <div class="row">
 

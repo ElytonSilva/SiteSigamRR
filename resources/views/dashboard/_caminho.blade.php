@@ -12,7 +12,7 @@
 
 			    @endforeach
 		    @else
-		     <span class="breadcrumb">Painel Principal</span>
+		     <span class="breadcrumb"></span>
 		    @endif
 		  </div>
 		</div>

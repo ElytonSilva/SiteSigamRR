@@ -1,9 +1,6 @@
 @extends('layouts.app')
-
 @section('content')
 <div class="container">
-	<div class="row">
-	</div>
 
 	@if (count($errors) > 0)
 	<div class="row">
@@ -32,12 +29,9 @@
 		</div>
 	</div>
 	@endif
-	@include('dashboard._caminho')
 
-
-	<div class="row">
-	</div>
 	<h5 class="center">Editar Perfil</h5>
+	@include('dashboard._caminho')
 	<div class="row">
 	</div>
 	<div class="row">

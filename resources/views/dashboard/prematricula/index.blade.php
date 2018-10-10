@@ -1,11 +1,8 @@
-@extends('layouts.app') @section('content')
-
+@extends('layouts.app')
+@section('content')
 <div class="container">
-    <div class="row"></div>
-    <div class="row">
-        <h4 class="center">Formulário de Pré-Matrícula</h4>
-    </div>
-
+    <h5 class="center">Formulário de Pré-Matrícula</h5>
+    @include('dashboard._caminho')
     <div class="row">
         <form class="form-horizontal " id="regForm" action="{{route('prematricula.store')}}" method="POST">
             {{ csrf_field()}}
@@ -68,7 +65,7 @@
                         <div class="row"></div>
                         <div class="row"></div>
                         <div class="row">
-                            <div class="col s12 m5 ">
+                            <div class="col s12 m6 ">
                                 <div class="card-panel white ">
                                     <b class="black-text">Documentos Necessários para Matrícula ? </b></br></br>
 

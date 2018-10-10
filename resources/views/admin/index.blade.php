@@ -1,8 +1,7 @@
-@extends('layouts.app') @section('content')
+@extends('layouts.app')
+@section('content')
 <div class="container">
-    <div class="row center">
-        <h2>PAINEL ADMINISTRATIVO</h2>
-    </div>
+    <h5 class="center">Painel Administrativo</h5>
 
     @include('admin._caminho')
     <div class="row">
