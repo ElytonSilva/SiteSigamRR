@@ -89,7 +89,7 @@
         </div>
         @endcan
 
-        @can('papel-view')
+        @can('prematricula-view')
         <div class="col s12 m6">
             <div class="card green darken-2">
                 <div class="row">
@@ -117,7 +117,7 @@
         </div>
         @endcan
         
-        @can('papel-view')
+        @can('matricula-view')
         <div class="col s12 m6">
             <div class="card amber darken-2">
                 <div class="row">

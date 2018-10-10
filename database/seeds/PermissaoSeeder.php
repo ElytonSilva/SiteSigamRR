@@ -101,6 +101,21 @@ class PermissaoSeeder extends Seeder
             'descricao' =>'Adicionar prematricula' 
         ]);
 
+        $renovacao1 = Permissao::firstOrCreate([
+            'nome' =>'renovacao-view',
+            'descricao' =>'Adicionar renovação' 
+        ]);
+
+        $renovacao2 = Permissao::firstOrCreate([
+            'nome' =>'renovacao-edit',
+            'descricao' =>'Adicionar renovação' 
+        ]);
+
+        $renovacao3 = Permissao::firstOrCreate([
+            'nome' =>'renovacao-delete',
+            'descricao' =>'Adicionar renovação' 
+        ]);
+
         
 
         echo "Registros de Permissoes criados no sistema";

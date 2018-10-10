@@ -2,7 +2,7 @@
 @section('content')
 <div class="container">
     <h5 class="center">Formulário de Pré-Matrícula</h5>
-    @include('dashboard._caminho')
+    @include('admin._caminho')
     <div class="row">
         <form class="form-horizontal " id="regForm" action="{{route('prematricula.store')}}" method="POST">
             {{ csrf_field()}}
@@ -57,7 +57,7 @@
                             <i class="material-icons prefix">code</i>
                             <label>Senha Gerada: </label>
 
-                            <input disabled="false" type="text" id="textsenha" name="senha" class="validate" value="{{ gerar_codigo($saida) }}"
+                            <input type="text" id="textsenha" name="senha" class="validate" value="{{ gerar_codigo($saida) }}"
                             style="color: #FF5722; letter-spacing: 3px; font-weight: bold;">
                             
                         </div>
