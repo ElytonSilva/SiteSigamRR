@@ -1,5 +1,11 @@
 @extends('layouts.app')
 @section('content')
+<style>
+img {
+  -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(5px 5px 5px #222);
+}
+</style>
 <div class="container">
     <h5 class="center">Painel Administrativo</h5>
 
