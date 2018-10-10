@@ -57,7 +57,7 @@
                             <i class="material-icons prefix">code</i>
                             <label>Senha Gerada: </label>
 
-                            <input type="text" id="textsenha" name="senha" class="validate" value="{{ gerar_codigo($saida) }}"
+                            <input type="text" id="textsenha" name="senha" class="validate" readonly="readonly" value="{{ gerar_codigo($saida) }}"
                             style="color: #FF5722; letter-spacing: 3px; font-weight: bold;">
                             
                         </div>
