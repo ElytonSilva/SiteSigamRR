@@ -56,11 +56,12 @@
                             <label>N° CPF do Pai</label>
                         </div>
 
-                        <div class="input-field col s4 ">
+                        <div class="input-field col s6 ">
                             <i class="material-icons prefix">code</i>
                             <label>Senha Gerada: </label>
 
-                            <input type="text" id="textsenha" name="senha" class="validate" value="{{ gerar_codigo($saida) }}">
+                            <input disabled="false" type="text" id="textsenha" name="senha" class="validate" value="{{ gerar_codigo($saida) }}"
+                            style="color: #FF5722; letter-spacing: 3px; font-weight: bold;">
                             
                         </div>
 
