@@ -15,7 +15,13 @@ class MatriculaController extends Controller
     public function index()
     {   
         
-        return view('dashboard.matricula.telaprincipal');
+        $caminhos = [
+        ['url'=>'/admin','titulo'=>'Tela Inicial'],
+        ['url'=>'','titulo'=>'Matricula'],
+        
+        ];
+        
+        return view('dashboard.matricula.telaprincipal',compact('caminhos'));
         
     }
     public function lista(){

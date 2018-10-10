@@ -15,6 +15,11 @@ class PreMatriculaController extends Controller
      */
     public function index()
     {
+        $caminhos = [
+            ['url'=>'/admin','titulo'=>'Tela Inicial'],
+            ['url'=>'','titulo'=>'Pré-Inscricao'],
+            
+        ];
         $identificador = Auth()->User()->id;
         $saida = strval($identificador);
         switch(strlen($saida)){
@@ -28,7 +33,7 @@ class PreMatriculaController extends Controller
                 $saida = "0".$saida;
             }break;
         }
-        return view('dashboard.prematricula.index', compact('saida'));
+        return view('dashboard.prematricula.index', compact('saida', 'caminhos'));
     }
 
     /**
@@ -51,7 +56,6 @@ class PreMatriculaController extends Controller
     {   
         $caminhos = [
             ['url'=>'/admin','titulo'=>'Tela Inicial'],
-            ['url'=>route('prematricula.index'),'titulo'=>'Pré-Matricula'],
             ['url'=>'','titulo'=>'Pré-Inscricao Realizada'],
             
         ];
@@ -63,7 +67,7 @@ class PreMatriculaController extends Controller
         $prematricula = PreMatricula::create($dados);
 
        // dd($prematricula);
-        return view('dashboard.prematricula.confirmacao');
+        return view('dashboard.prematricula.confirmacao', compact('user','caminhos'));
 
     }
 

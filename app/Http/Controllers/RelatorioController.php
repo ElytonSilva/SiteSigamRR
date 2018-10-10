@@ -13,7 +13,11 @@ class RelatorioController extends Controller
      */
     public function index()
     {
-        return view('dashboard.relatorios.index');
+        $caminhos = [
+            ['url'=>'/admin','titulo'=>'Tela Inicial'],
+            ['url'=>'','titulo'=>'Relatórios'],    
+        ];
+        return view('dashboard.relatorios.index', compact('caminhos'));
     }
 
     public function lista(){
