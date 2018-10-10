@@ -1,9 +1,7 @@
 @extends('layouts.app')
-
 @section('content')
 	<div class="container">
-		<h2 class="center">Lista de Papéis</h2>
-
+		<h5 class="center">Lista de Papéis</h5>
 		@include('admin._caminho')
 		<div class="row">
 			<table>
