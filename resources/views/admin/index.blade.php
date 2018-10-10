@@ -234,8 +234,13 @@ img {
         </div>
         @endcan
 
+<<<<<<< HEAD
         @can('papel-view')
         <div class="col s12 m6 hvr-buzz-out">
+=======
+        @can('prematricula-view')
+        <div class="col s12 m6">
+>>>>>>> b0e59c4f6c104649d2958dee1b10b11bb9ed2f2b
             <div class="card green darken-2">
                 <div class="row">
                     <div class="col s8 m8">
@@ -261,8 +266,13 @@ img {
         </div>
         @endcan
         
+<<<<<<< HEAD
         @can('papel-view')
         <div class="col s12 m6 hvr-buzz-out">
+=======
+        @can('matricula-view')
+        <div class="col s12 m6">
+>>>>>>> b0e59c4f6c104649d2958dee1b10b11bb9ed2f2b
             <div class="card amber darken-2">
                 <div class="row">
                     <div class="col s8 m8">

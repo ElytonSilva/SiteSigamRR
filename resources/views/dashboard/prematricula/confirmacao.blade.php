@@ -13,7 +13,7 @@
                         <div class="col s12">
                         <div class="row"></div>
                         <div class="row"></div>
-                        <a title="Voltar para página principal" class="btn orange darken-4 btn-info right " href="/admin">Voltar
+                        <a title="Voltar Para Página Principal" class="btn orange darken-4 btn-info right " href="/admin">Voltar
                             <i class="material-icons left">arrow_back_ios</i>
                         </a>
                     </div>
