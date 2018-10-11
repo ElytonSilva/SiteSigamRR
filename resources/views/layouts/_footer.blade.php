@@ -12,7 +12,7 @@ ul > li {
     <div class="row">
       <div class="col l6 s12">
         <h5 class="white-text">SMEF</h5>
-        <p class="grey-text text-lighten-4">Sistema de Matrilcula do Colégio Militar Estadual Dr° Luiz Ritller Brito de Lucena</p>
+        <p class="grey-text text-lighten-4">Sistema de gerênciamento de matricula e pré-matricula do Colégio Militar Estadual Dr° Luiz Ritller Brito de Lucena</p>
       </div>
       <div class="col l4 offset-l2 s12">
         <h5 class="white-text">SOCIAL</h5>
@@ -20,7 +20,7 @@ ul > li {
           <li><a class="grey-text text-lighten-3" href="#!"><img class="responsive-img" style="max-widht:32px; max-height:32px;" src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/facebook-512.png"></a></li>
           <li><a class="grey-text text-lighten-3" href="#!"><img class="responsive-img" style="max-widht:32px; max-height:32px;" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-twitter-512.png"></a></li>
           <li><a class="grey-text text-lighten-3" href="#!"><img class="responsive-img" style="max-widht:32px; max-height:32px;" src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/youtube_v2-512.png"></a></li>
-          <li><a class="grey-text text-lighten-3" href="#!"><img class="responsive-img" style="max-widht:32px; max-height:32px;"></a></li>
+          <li><a class="grey-text text-lighten-3" href="#!"><img class="responsive-img" style="max-widht:32px; max-height:32px;" src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/whatsapp-512.png"></a></li>
         </ul>
       </div>
     </div>
