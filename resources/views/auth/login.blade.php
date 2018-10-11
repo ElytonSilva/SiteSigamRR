@@ -1,12 +1,18 @@
 @extends('layouts.app')
 @section('content')
-
+<style>
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  width: 90%;
+}
+</style>
 <div class="background-login">
     <div class="container">
         <div class="row">
         </div>
             <div class="row">
-                <div class="col s4 offset-s4">
+                <div class="col s12 m10 l8 offset-m1 offset-l2">
                     <div class="card-panel white"> 
                         <center><img class="responsive-img" src="/imagens/icone-aluno.png"</i><center>
                         <h6>Bem-vindo!</h6>
