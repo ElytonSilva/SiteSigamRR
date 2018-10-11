@@ -3,7 +3,6 @@
     <h5 class="center">Painel do Cadastro de Matricula</h5>
     @include('admin._caminho')
     <div class="row">
-
         <div class="col s12 m6">
             <div class="card grey darken-3">
                 <div class="card-content white-text">
