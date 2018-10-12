@@ -7,9 +7,9 @@
 
     <div class="row mb-0">
         <div class="col-sm-4 input-group">
-            <form action="#" method="POST">
+            <form action="{{route('relatorio.prematricula.buscar')}}" method="POST">
                 {{ csrf_field()}}
-                <input type="text" id="buscar" class="form-control" name="buscar" placeholder="Buscar Código Cadastrado Pré-Matricula">
+                <input type="text" id="buscar" class="form-control" name="buscar" placeholder="Buscar Nome do Aluno Cadastrado na Pré-Matricula">
                 <div class="col-md-2">
 
                     <a title="Buscar os código pré-matricula"> <button type= "submit" class="btn btn-default" type="button">Buscar</button></a>
