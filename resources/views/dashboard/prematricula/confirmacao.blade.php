@@ -13,9 +13,14 @@
                         <div class="col s12">
                         <div class="row"></div>
                         <div class="row"></div>
-                        <a title="Voltar Para Página Principal" class="btn orange darken-4 btn-info right " href="/admin">Voltar
+                        
+                        <a title="Voltar Para Página Principal" class="btn orange darken-4 btn-info left " href="/admin">Voltar
                             <i class="material-icons left">arrow_back_ios</i>
                         </a>
+
+                        <button class="btn green right">Gerar Comprovante
+                                <i class="material-icons left">file_download</i>
+                        </button>
                     </div>
                 </form>
             </div>
