@@ -91,11 +91,11 @@ Route::group(['middleware' => 'auth','prefix' => 'admin'], function () {
 
     Route::get('/prematricula/inicio',['as'=>'prematricula.index','uses'=>'PreMatriculaController@index']);
     Route::post('/prematricula/salvar',['as'=>'prematricula.store','uses'=>'PreMatriculaController@store']);
-    Route::post('/prematricula/{id}/comprovantepdf',['as'=>'prematricula.gerarpdf','uses'=>'PDFController@gerarpdf']);
+    Route::get('/prematricula/{id}/comprovantepdf',['as'=>'prematricula.gerarpdf','uses'=>'PDFController@gerarpdf']);
 
   /*-----------------------------------------------------------------------------------------------------------*/
 
-
+	
   /*-----------------------ROTAS DE RELATORIOS---------------------------------------------------------------*/
 
   Route::get('relatorios/inicio',['as'=>'relatorios.index','uses'=>'RelatorioController@index']);
@@ -112,7 +112,9 @@ Route::group(['middleware' => 'auth','prefix' => 'admin'], function () {
     Route::put('perfil/atualizar', ['as'=>'perfil.index.update','uses'=>'Site\SiteController@perfilUpdate']);
 
     /*-----------------------------------------------------------------------------------------------------------*/
-
+	
+	
+	Route::get('pdf', 'PDFController@gerarpdf');
 
 });
 
