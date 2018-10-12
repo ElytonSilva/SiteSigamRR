@@ -315,7 +315,7 @@ img {
         </div>
         @endcan
 
-
+        @can('relatorios-view')
         <div class="col s12 m6 hvr-buzz-out hvr-buzz-out">
             <div class="card brown darken-1">
                 <div class="row">
@@ -340,6 +340,7 @@ img {
                 </div>
             </div>
         </div>
+        @endcan
     </div>
 
 </div>
