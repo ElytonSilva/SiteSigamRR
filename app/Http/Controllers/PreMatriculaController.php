@@ -54,11 +54,6 @@ class PreMatriculaController extends Controller
      */
     public function store(PreMatriculaRequest $request)
     {   
-        $caminhos = [
-            ['url'=>'/admin','titulo'=>'Tela Inicial'],
-            ['url'=>'','titulo'=>'Pré-Inscricao Realizada'],
-            
-        ];
         $user = Auth()->user();
         
         $dados = $request->all();
@@ -67,10 +62,11 @@ class PreMatriculaController extends Controller
         $prematricula = PreMatricula::create($dados);
 
        // dd($prematricula);
-        return view('dashboard.prematricula.confirmacao', compact('user','caminhos'));
+        return view('dashboard.prematricula.confirmacao', compact ('prematricula'));
 
     }
-
+	
+	
     /**
      * Display the specified resource.
      *
