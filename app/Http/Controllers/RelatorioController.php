@@ -31,6 +31,24 @@ class RelatorioController extends Controller
         return view('dashboard.relatorios.listaprematricula',compact('prematriculas','caminhos'));
     }
 
+    public function BuscarAluno(Request $request){
+       
+        $caminhos = [
+            ['url'=>'/admin','titulo'=>'Tela Inicial'],
+            ['url'=>route('relatorios.index'),'titulo'=>'Relatórios'],
+            ['url'=>route('relatorios.lista'),'titulo'=>'Lista de Cadastrados Pré-Matricula'],
+            ['url'=>'','titulo'=>'Pesquisar Nome do Aluno Sorteado'],
+            
+        ];
+        
+        
+        $str = $request->get('buscar');
+        $prematriculas = PreMatricula::where( 'nomealuno' , 'ILIKE' , '%'. $str .'%' )
+            ->orderBy('nomealuno','asc')
+            ->paginate(4);
+        return view('dashboard.relatorios.listaprematricula', compact('caminhos'))->with([ 'prematriculas' => $prematriculas ,'buscar' => true ]);   
+    }
+
     /**
      * Show the form for creating a new resource.
      *

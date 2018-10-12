@@ -116,6 +116,21 @@ class PermissaoSeeder extends Seeder
             'descricao' =>'Adicionar renovação' 
         ]);
 
+        $relatorio1 = Permissao::firstOrCreate([
+            'nome' =>'relatorios-view',
+            'descricao' =>'Adicionar relatorios' 
+        ]);
+
+        $relatorio2 = Permissao::firstOrCreate([
+            'nome' =>'relatorios-edit',
+            'descricao' =>'editar relatorios' 
+        ]);
+
+        $relatorio3 = Permissao::firstOrCreate([
+            'nome' =>'relatorios-delete',
+            'descricao' =>'excluir relatorios' 
+        ]);
+
         
 
         echo "Registros de Permissoes criados no sistema";
