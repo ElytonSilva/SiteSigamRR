@@ -91,6 +91,7 @@ Route::group(['middleware' => 'auth','prefix' => 'admin'], function () {
 
     Route::get('/prematricula/inicio',['as'=>'prematricula.index','uses'=>'PreMatriculaController@index']);
     Route::post('/prematricula/salvar',['as'=>'prematricula.store','uses'=>'PreMatriculaController@store']);
+    Route::post('/prematricula/{id}/comprovantepdf',['as'=>'prematricula.gerarpdf','uses'=>'PDFController@gerarpdf']);
 
   /*-----------------------------------------------------------------------------------------------------------*/
 
@@ -99,6 +100,7 @@ Route::group(['middleware' => 'auth','prefix' => 'admin'], function () {
 
   Route::get('relatorios/inicio',['as'=>'relatorios.index','uses'=>'RelatorioController@index']);
   Route::get('relatorios/listar/cadastrados',['as'=>'relatorios.lista','uses'=> 'RelatorioController@lista']);
+  Route::post('relatorios/lista/cadastrados/busca-prematricula',['as'=>'relatorio.prematricula.buscar','uses'=> 'RelatorioController@BuscarAluno']);
   
 
   /*------------------------------------------------------------------------------------------------------*/
