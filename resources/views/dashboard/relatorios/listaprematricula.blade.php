@@ -46,7 +46,7 @@
 
 					 
 					<td>
-						
+						 
 						<a title="Deletar Pré-Matricula" href="{{route('relatorio.prematricula.destroy', $prematricula->id)}}" class="btn red">
 							<i class="material-icons">delete</i>
 						</a>
