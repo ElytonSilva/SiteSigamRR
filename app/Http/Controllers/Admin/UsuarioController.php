@@ -149,9 +149,8 @@ class UsuarioController extends Controller
     public function destroy($id)
     {
         
-        if(Gate::denies('usuario-delete')){
-            abort(403,"Acesso não autorizado");
-        }
+         User::find($id)->delete();
+        return redirect()->route('usuarios.index');
         
     }
 }

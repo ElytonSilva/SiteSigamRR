@@ -114,6 +114,7 @@ class RelatorioController extends Controller
      */
     public function destroy($id)
     {
-        //
+        PreMatricula::find($id)->delete();
+        return redirect()->route('relatorios.lista');
     }
 }

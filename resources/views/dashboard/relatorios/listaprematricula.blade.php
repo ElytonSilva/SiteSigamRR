@@ -30,6 +30,7 @@
                     <th>Nome do Pai</th>
                     <th>Nome do Aluno</th>
                     <th>Senha</th>
+					<th>Ação</th>
 
 
                 </tr>
@@ -43,7 +44,16 @@
                     <td> {{$prematricula->nomealuno}}  </td>
                     <td> {{$prematricula->senha}}  </td>
 
-                
+					 
+					<td>
+						
+						<a title="Deletar Pré-Matricula" href="{{route('relatorio.prematricula.destroy', $prematricula->id)}}" class="btn red">
+							<i class="material-icons">delete</i>
+						</a>
+
+                       
+						
+					</td>
                 </tr>
 
 
