@@ -169,7 +169,7 @@ img {
                     <div class="col s4 m4">
                         <img 
                         class="responsive-img"
-                        src="imagens/icons/user_edit.png"
+                        src="{{ url('storage/icons/user_edit.png') }}"
                         style="
                         position:relative; 
                         float:right; 
@@ -196,7 +196,7 @@ img {
                     <div class="col s4 m4">
                         <img 
                         class="responsive-img"
-                        src="imagens/icons/user.png"
+                        src="{{ url('storage/icons/user.png') }}"
                         style="
                         position:relative; 
                         float:right; 
@@ -223,7 +223,7 @@ img {
                     <div class="col s4 m4">
                         <img 
                         class="responsive-img"
-                        src="imagens/icons/key.png"
+                        src="{{ url('storage/icons/key.png') }}"
                         style="
                         position:relative; 
                         float:right; 
@@ -250,7 +250,7 @@ img {
                     <div class="col s4 m4">
                         <img 
                         class="responsive-img"
-                        src="imagens/icons/confirm.png"
+                        src="{{ url('storage/icons/confirm.png') }}"
                         style="
                         position:relative; 
                         float:right; 
@@ -277,7 +277,7 @@ img {
                     <div class="col s4 m4">
                         <img 
                         class="responsive-img"
-                        src="imagens/icons/matricula.png"
+                        src="{{ url('storage/icons/matricula.png') }}"
                         style="
                         position:relative; 
                         float:right; 
@@ -304,7 +304,7 @@ img {
                     <div class="col s4 m4">
                         <img 
                         class="responsive-img"
-                        src="imagens/icons/user_confirm.png"
+                        src="{{ url('storage/icons/user_confirm.png') }}"
                         style="
                         position:relative; 
                         float:right; 
@@ -331,7 +331,7 @@ img {
                     <div class="col s4 m4">
                         <img 
                         class="responsive-img"
-                        src="imagens/icons/relatorio.png"
+                        src="{{ url('storage/icons/relatorio.png') }}"
                         style="
                         position:relative; 
                         float:right; 
