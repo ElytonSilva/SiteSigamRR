@@ -15,8 +15,8 @@
                     <div class="row"></div>
 
                     <div class="row">
-
-                        <div class="input-field col s4 {{$errors->has('nomealuno') ? 'has-error' : ''}} ">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('nomealuno') ? 'has-error' : ''}} ">
                             <input type="text" name="nomealuno" class="validate" value = "{{old('nomealuno')}}">
                             <label>Nome do Aluno(a)</label>
                             @if($errors->has('nomealuno'))
@@ -26,8 +26,10 @@
                             @endif
 
                         </div>
-
-                        <div class="input-field col s4 {{$errors->has('sexo') ? 'has-error' : ''}}">
+                        </div>
+                        
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('sexo') ? 'has-error' : ''}}">
                             <select name="sexo">
                                 <option value="" disabled selected>Selecione uma opção</option>
                                 <option value="Masculino" {{ old('sexo') == 'Masculino'? 'selected' : '' }}>Masculino</option>
@@ -41,9 +43,10 @@
                             </span>
                             @endif
                         </div>
+                        </div>
 
-
-                        <div class="input-field col s4 {{$errors->has('serieano') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('serieano') ? 'has-error' : ''}}">
                             <input type="text" name="serieano" class="validate" value = "{{old('serieano')}}">
                             <label>Serie/Ano</label>
                             @if($errors->has('serieano'))
@@ -53,8 +56,10 @@
                             @endif
 
                         </div>
+                        </div>
 
-                        <div class="input-field col s4 {{$errors->has('datanascimento') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('datanascimento') ? 'has-error' : ''}}">
                             <input type="text" name="datanascimento" class="datepicker" value = "{{old('datanascimento')}}">
                             <label>Data de Nascimento</label>
                             @if($errors->has('datanascimento'))
@@ -64,8 +69,10 @@
                             @endif
 
                         </div>
+                        </div>
 
-                        <div class="input-field col s4 {{$errors->has('naturalidade') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('naturalidade') ? 'has-error' : ''}}">
                             <input type="text" name="naturalidade" class="validate" value = "{{old('naturalidade')}}">
                             <label>Naturalidade</label>
                             @if($errors->has('naturalidade'))
@@ -75,8 +82,10 @@
                             @endif
 
                         </div>
+                        </div>
 
-                        <div class="input-field col s4 {{$errors->has('uf') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('uf') ? 'has-error' : ''}}">
                             <input type="text" name="uf" class="validate" value = "{{old('uf')}}">
                             <label>UF</label>
                             @if($errors->has('uf'))
@@ -86,8 +95,10 @@
                             @endif
 
                         </div>
+                        </div>
 
-                        <div class="input-field col s4 {{$errors->has('quantdirmao') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('quantdirmao') ? 'has-error' : ''}}">
                             <input type="text" name="quantdirmao" class="validate" value = "{{old('quantdirmao')}}">
                             <label>Quantidade de Irmãos </label>
                             @if($errors->has('quantdirmao'))
@@ -97,9 +108,10 @@
                             @endif
 
                         </div>
+                        </div>
 
-
-                        <div class="input-field col s4 {{$errors->has('cor') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('cor') ? 'has-error' : ''}}">
                             <select name="cor">
                                 <option value="" disabled selected>Selecione uma opção</option>
                                 <option value="Branca" {{ old('cor') == 'Branca'? 'selected' : '' }}>Branca</option>
@@ -115,10 +127,10 @@
                             </span>
                             @endif
                         </div>
+                        </div>
 
-
-
-                        <div class="input-field col s4 {{$errors->has('endereço') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('endereço') ? 'has-error' : ''}}">
                             <input type="text" name="endereço" id="endereco" class="validate" value = "{{old('endereço')}}">
                             <label>Endereço</label>
                             @if($errors->has('endereço'))
@@ -128,8 +140,10 @@
                             @endif
 
                         </div>
+                        </div>
 
-                        <div class="input-field col s4 {{$errors->has('numero') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('numero') ? 'has-error' : ''}}">
                             <input type="text" name="numero" class="validate" value = "{{old('numero')}}">
                             <label>Número</label>
                             @if($errors->has('numero'))
@@ -139,8 +153,10 @@
                             @endif
 
                         </div>
+                        </div>
 
-                        <div class="input-field col s4 {{$errors->has('cep') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('cep') ? 'has-error' : ''}}">
                             <input type="text" name="cep" id="cep" pattern="[0-9]{5}-[0-9]{3}" class="validate" value = "{{old('cep')}}">
                             <label>CEP</label>
                             @if($errors->has('cep'))
@@ -150,8 +166,10 @@
                             @endif
 
                         </div>
+                        </div>
 
-                        <div class="input-field col s4 {{$errors->has('bairro') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('bairro') ? 'has-error' : ''}}">
                             <input type="text" name="bairro" id="bairro" class="validate" value = "{{old('bairro')}}">
                             <label>Bairro</label>
                             @if($errors->has('bairro'))
@@ -161,8 +179,10 @@
                             @endif
 
                         </div>
+                        </div>
 
-                        <div class="input-field col s4 {{$errors->has('nomedopai') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('nomedopai') ? 'has-error' : ''}}">
                             <input type="text" name="nomedopai" class="validate" value = "{{old('nomedopai')}}">
                             <label>Nome do pai</label>
                             @if($errors->has('nomedopai'))
@@ -172,8 +192,10 @@
                             @endif
 
                         </div>
+                        </div>
 
-                        <div class="input-field col s4 {{$errors->has('contatodopai') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('contatodopai') ? 'has-error' : ''}}">
                             <input type="text" name="contatodopai" id="telefone" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" class="validate" value = "{{old('contatodopai')}}">
                             <label>Contato do pai</label>
                             @if($errors->has('contatodopai'))
@@ -183,8 +205,10 @@
                             @endif
 
                         </div>
+                        </div>
 
-                        <div class="input-field col s4 {{$errors->has('nomedamae') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('nomedamae') ? 'has-error' : ''}}">
                             <input type="text" name="nomedamae" class="validate" value = "{{old('nomedamae')}}">
                             <label>Nome da Mae</label>
                             @if($errors->has('nomedamae'))
@@ -194,8 +218,10 @@
                             @endif
 
                         </div>
+                        </div>
 
-                        <div class="input-field col s4 {{$errors->has('contatodamae') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('contatodamae') ? 'has-error' : ''}}">
                             <input type="text" name="contatodamae" id="telefone1" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" class="validate" value = "{{old('contatodamae')}}">
                             <label>Contato da Mae</label>
                             @if($errors->has('contatodamae'))
@@ -205,8 +231,10 @@
                             @endif
 
                         </div>
+                        </div>
 
-                        <div class="input-field col s4 {{$errors->has('numRG') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('numRG') ? 'has-error' : ''}}">
                             <input type="text" name="numRG" id = "rg" class="validate" value = "{{old('numRG')}}">
                             <label>N° do RG</label>
                             @if($errors->has('numRG'))
@@ -216,8 +244,10 @@
                             @endif
 
                         </div>
+                        </div>
 
-                        <div class="input-field col s4 {{$errors->has('orgaoexpedidor') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('orgaoexpedidor') ? 'has-error' : ''}}">
                             <input type="text" name="orgaoexpedidor" class="validate" value = "{{old('orgaoexpedidor')}}">
                             <label>Orgão Expedidor</label>
                             @if($errors->has('orgaoexpedidor'))
@@ -227,8 +257,10 @@
                             @endif
 
                         </div>
+                        </div>
 
-                        <div class="input-field col s4 {{$errors->has('dataexpedicao') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('dataexpedicao') ? 'has-error' : ''}}">
                             <input type="text" name="dataexpedicao" class="datepicker" value = "{{old('dataexpedicao')}}">
                             <label>Data expedição</label>
                             @if($errors->has('dataexpedicao'))
@@ -238,8 +270,10 @@
                             @endif
 
                         </div>
+                        </div>
 
-                        <div class="input-field col s4 {{$errors->has('cpf') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('cpf') ? 'has-error' : ''}}">
                             <input type="text" name="cpf" id= "cpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" class="validate" value = "{{old('cpf')}}">
                             <label>CPF</label>
                             @if($errors->has('cpf'))
@@ -249,8 +283,10 @@
                             @endif
 
                         </div>
+                        </div>
 
-                        <div class="input-field col s4 {{$errors->has('dataMatricula') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('dataMatricula') ? 'has-error' : ''}}">
                             <input type="text" name="dataMatricula" class="datepicker" value = "{{old('dataMatricula')}}">
                             <label>Data de Matricula</label>
                             @if($errors->has('dataMatricula'))
@@ -260,9 +296,10 @@
                             @endif
 
                         </div>
+                        </div>
 
-
-                        <div class="input-field col s4 {{$errors->has('alunoBolsaFamlia') ? 'has-error' : ''}}">
+                        <div class="col s12 m4">
+                        <div class="input-field {{$errors->has('alunoBolsaFamlia') ? 'has-error' : ''}}">
                             <select name="alunoBolsaFamlia">
                                 <option value="" disabled selected>Selecione uma opção </option>
                                 <option value="Sim" {{ old('alunoBolsaFamlia') == 'Sim'? 'selected' : '' }}>Sim</option>
@@ -276,11 +313,11 @@
                             </span>
                             @endif
                         </div>
-
-
-                        <div class="row">
                         </div>
-                        <div class="col s12">
+
+                        <div class="col s12 m4">
+                        </div>
+                        <div class="col s12 m4">
                             <button class="btn orange darken-4 btn-info right">Salvar
                                 <i class="material-icons left">save</i>
                             </button>

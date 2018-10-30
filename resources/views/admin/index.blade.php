@@ -341,6 +341,33 @@ img {
             </div>
         </div>
         @endcan
+
+        @can('relatorios-view')
+        <div class="col s12 m6 hvr-buzz-out hvr-buzz-out">
+            <div class="card grey darken-3">
+                <div class="row">
+                    <div class="col s8 m8">
+                        <div class="card-content white-text">
+                            <span class="card-title">Anotações</span>
+                            <p>Edite as informações dos documentos</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" style="color:white; font-weight:bold;">Entrar</a>
+                        </div>
+                    </div>
+                    <div class="col s4 m4">
+                        <img 
+                        class="responsive-img"
+                        src="{{ url('imagens/icons/text_note.png') }}"
+                        style="
+                        position:relative; 
+                        float:right; 
+                        margin:10px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        @endcan
     </div>
 
 </div>

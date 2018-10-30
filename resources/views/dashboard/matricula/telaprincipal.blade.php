@@ -166,7 +166,7 @@ img {
                     <div class="col s4 m4">
                         <img 
                         class="responsive-img"
-                        src="{{ url('storage/icons/pen.png') }}"
+                        src="{{ url('imagens/icons/pen.png') }}"
                         style="
                         position:relative; 
                         float:right; 
@@ -190,7 +190,7 @@ img {
                     <div class="col s4 m4">
                         <img 
                         class="responsive-img"
-                        src="{{ url('storage/icons/list.png') }}"
+                        src="{{ url('imagens/icons/list.png') }}"
                         style="
                         position:relative; 
                         float:right; 

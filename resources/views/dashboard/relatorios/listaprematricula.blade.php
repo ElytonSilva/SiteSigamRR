@@ -26,9 +26,9 @@
             <thead>
                 <tr>
                     <th>Id</th>
+                    <th>Nome do Aluno</th>
                     <th>Nome da Mãe</th>
                     <th>Nome do Pai</th>
-                    <th>Nome do Aluno</th>
                     <th>Senha</th>
 					<th>Ação</th>
 
@@ -39,24 +39,21 @@
                 @foreach($prematriculas as $prematricula)
                 <tr>
                     <td> {{$prematricula->id}} </td>
+                    <td> {{$prematricula->nomealuno}} </td>
                     <td> {{$prematricula->nomemae}} </td>
                     <td> {{$prematricula->nomepai}} </td>
-                    <td> {{$prematricula->nomealuno}}  </td>
                     <td> {{$prematricula->senha}}  </td>
 
 					 
 					<td>
-						 
 						<a title="Deletar Pré-Matricula" href="{{route('relatorio.prematricula.destroy', $prematricula->id)}}" class="btn red">
 							<i class="material-icons">delete</i>
+                        </a>
+                        <a title="Deletar Pré-Matricula" href="#" class="btn orange">
+							<i class="material-icons">lock_open</i>
 						</a>
-
-                       
-						
-					</td>
+                    </td>
                 </tr>
-
-
                 @endforeach
             </tbody>
         </table>
