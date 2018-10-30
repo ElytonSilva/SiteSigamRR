@@ -12,7 +12,6 @@
                 @if(isset($value->descricao))
                     <h5 class="light grey-text text-lighten-3">"{{$value->descricao}}"</h5>
                 @endif
-                
             </div>
         </li>
         @endforeach
