@@ -76,27 +76,17 @@ class PermissaoSeeder extends Seeder
             'descricao' =>'Editar Perfil.'
         ]);
 
-        $boletim1 = Permissao::firstOrCreate([
-            'nome' =>'boletim-view',
-            'descricao' =>'Adicionar boletim' 
-        ]); 
-
-        $renovação1 = Permissao::firstOrCreate([
-            'nome' =>'renovacao-view',
-            'descricao' =>'Adicionar renovacao' 
+        $prematricula1 = Permissao::firstOrCreate([
+            'nome' =>'prematricula-view',
+            'descricao' =>'Adicionar prematricula' 
         ]);
-
-        $declaracao1 = Permissao::firstOrCreate([
-            'nome' =>'declaracao-view',
-            'descricao' =>'Adicionar declaracao' 
+		
+		$prematricula2 = Permissao::firstOrCreate([
+            'nome' =>'prematricula-edit',
+            'descricao' =>'Adicionar prematricula' 
         ]);
-
-        $transferencia1 = Permissao::firstOrCreate([
-            'nome' =>'transferencia-view',
-            'descricao' =>'Adicionar transferencia' 
-        ]);
-
-        $prematricula = Permissao::firstOrCreate([
+		
+		$prematricula3 = Permissao::firstOrCreate([
             'nome' =>'prematricula-view',
             'descricao' =>'Adicionar prematricula' 
         ]);
