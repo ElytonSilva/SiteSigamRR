@@ -99,8 +99,10 @@ Route::group(['middleware' => 'auth','prefix' => 'admin'], function () {
   /*-----------------------ROTAS DE RELATORIOS---------------------------------------------------------------*/
 
   Route::get('relatorios/inicio',['as'=>'relatorios.index','uses'=>'RelatorioController@index']);
-  Route::get('relatorios/listar/cadastrados',['as'=>'relatorios.lista','uses'=> 'RelatorioController@lista']);
+  Route::get('relatorios/listar/cadastrados',['as'=>'relatorios.lista','uses'=> 'RelatorioController@listaPrematricula']);
   Route::post('relatorios/lista/cadastrados/busca-prematricula',['as'=>'relatorio.prematricula.buscar','uses'=> 'RelatorioController@BuscarAluno']);
+  Route::get('relatorios/lista/Matriculados',['as'=>'relatorios.lista.matriculados','uses'=> 'RelatorioController@listaMatricula']);
+  Route::post('relatorios/lista/cadastrados/busca-matricula',['as'=>'relatorio.matricula.buscar','uses'=> 'RelatorioController@buscaMatricula']);
   Route::get('relatorios/lista/deletecadastro/{id}',['as'=>'relatorio.prematricula.destroy','uses'=>'RelatorioController@destroy']);
   
 

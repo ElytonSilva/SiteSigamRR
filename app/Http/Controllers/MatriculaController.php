@@ -141,7 +141,7 @@ class MatriculaController extends Controller
         $caminhos = [
             ['url'=>'/admin','titulo'=>'Tela Inicial'],
             ['url'=>route('matricula.index'),'titulo'=>'Matricula'],
-            ['url'=>route('matricula.lista'),'titulo'=>'Lista de Alunos'],
+            ['url'=>route('matricula.lista'),'titulo'=>'Lista de Alunos Matriculados'],
             ['url'=>'','titulo'=>'Pesquisar nome dos Alunos'],
             
         ];

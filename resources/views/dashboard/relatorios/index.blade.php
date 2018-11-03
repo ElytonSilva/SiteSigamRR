@@ -201,6 +201,31 @@ img {
                 </div>
             </div>
         </div>
+		
+		<div class="col s12 m6 hvr-buzz-out hvr-buzz-out">
+            <div class="card grey darken-3">
+                <div class="row">
+                    <div class="col s8 m8">
+                        <div class="card-content white-text">
+                            <span class="card-title">Lista de Matriculados</span>
+                            <p>Exibir Lista de Matriculados</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="{{route('relatorios.lista.matriculados')}}" style="color:white; font-weight:bold;">Entrar</a>
+                        </div>
+                    </div>
+                    <div class="col s4 m4">
+                        <img 
+                        class="responsive-img"
+                        src="{{ url('imagens/icons/list.png') }}"
+                        style="
+                        position:relative; 
+                        float:right; 
+                        margin:10px;">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>   
 </div>
 @endsection

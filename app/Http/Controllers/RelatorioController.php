@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\PreMatricula;
+use App\Matricula;
 class RelatorioController extends Controller
 {
     /**
@@ -20,7 +21,7 @@ class RelatorioController extends Controller
         return view('dashboard.relatorios.index', compact('caminhos'));
     }
 
-    public function lista(){
+    public function listaPrematricula(){
         $prematriculas = PreMatricula::all();
         $caminhos = [
             ['url'=>'/admin','titulo'=>'Tela Inicial'],
@@ -29,6 +30,34 @@ class RelatorioController extends Controller
             
         ];
         return view('dashboard.relatorios.listaprematricula',compact('prematriculas','caminhos'));
+    }
+
+    public function listaMatricula(){
+        $matriculas = Matricula::all();
+        $caminhos = [
+            ['url'=>'/admin','titulo'=>'Tela Inicial'],
+            ['url'=>route('relatorios.index'),'titulo'=>'Relatórios'],
+            ['url'=>'','titulo'=>'Lista de Alunos Matriculados'],
+            
+        ];
+        return view('dashboard.relatorios.listamatricula',compact('matriculas','caminhos'));
+    }
+
+    public function buscaMatricula(Request $request){
+        $caminhos = [
+            ['url'=>'/admin','titulo'=>'Tela Inicial'],
+            ['url'=>route('relatorios.index'),'titulo'=>'Relatórios'],
+            ['url'=>route('relatorios.lista.matriculados'),'titulo'=>'Lista de Alunos Matriculados'],
+            ['url'=>'','titulo'=>'Pesquisar Nome dos Alunos'],
+            
+        ];
+        
+        
+        $str = $request->get('buscar');
+        $matriculados = Matricula::where( 'nomealuno' , 'ILIKE' , '%'. $str .'%' )
+            ->orderBy('nomealuno','asc')
+            ->paginate(4);
+        return view('dashboard.matricula.lista', compact('caminhos'))->with([ 'matriculas' => $matriculados ,'buscar' => true ]);   
     }
 
     public function BuscarAluno(Request $request){
