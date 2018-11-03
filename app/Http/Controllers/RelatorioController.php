@@ -57,7 +57,7 @@ class RelatorioController extends Controller
         $matriculados = Matricula::where( 'nomealuno' , 'ILIKE' , '%'. $str .'%' )
             ->orderBy('nomealuno','asc')
             ->paginate(4);
-        return view('dashboard.matricula.lista', compact('caminhos'))->with([ 'matriculas' => $matriculados ,'buscar' => true ]);   
+        return view('dashboard.relatorios.listamatricula', compact('caminhos'))->with([ 'matriculas' => $matriculados ,'buscar' => true ]);   
     }
 
     public function BuscarAluno(Request $request){
