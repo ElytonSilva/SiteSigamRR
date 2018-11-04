@@ -352,7 +352,7 @@ img {
                             <p>Edite as informações dos documentos</p>
                         </div>
                         <div class="card-action">
-                            <a href="#" style="color:white; font-weight:bold;">Entrar</a>
+                            <a href="{{route('anotacao.index')}}" style="color:white; font-weight:bold;">Entrar</a>
                         </div>
                     </div>
                     <div class="col s4 m4">

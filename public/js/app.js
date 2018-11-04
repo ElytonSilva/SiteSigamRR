@@ -20805,12 +20805,20 @@ if (Vel) {
 $(document).ready(function() {
     Materialize.updateTextFields();
     $('.slider').slider({full_width: true});
-   $('select').material_select();
+    $('select').material_select();
+
+    // for HTML5 "required" attribute
+    $("select[required]").css({
+        display: "inline",
+        height: 0,
+        padding: 0,
+        width: 0
+    });
    
     $('#cep').mask('00000-000');
     $("#rg").mask("99.999.999-9");
-	$('#cpf').mask('000.000.000-00', {reverse: true});
-	$('#cpftwo').mask('000.000.000-00', {reverse: true});
+    $('#cpf').mask('000.000.000-00', {reverse: true});
+    $('#cpftwo').mask('000.000.000-00', {reverse: true});
     $("#telefone").mask('(00) 0000-00009');
     $("#telefone1").mask('(00) 0000-00009');
 
@@ -20834,6 +20842,19 @@ $(document).ready(function() {
     closeOnSelect: false // Close upon selecting a date,
   });
 
+  //Config da hora
+  $('.timepicker').pickatime({
+    default: 'now', // Set default time: 'now', '1:30AM', '16:30'
+    fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
+    twelvehour: false, // Use AM/PM or 24-hour format
+    donetext: 'Confirmar', // text for done-button
+    cleartext: 'Limpar', // text for clear-button
+    canceltext: 'Cancelar', // Text for cancel-button
+    autoclose: false, // automatic close timepicker
+    ampmclickable: true, // make AM PM clickable
+    aftershow: function(){} //Function for after opening timepicker
+  });
+  
   function limpa_formulário_cep() {
     // Limpa valores do formulário de cep.
     $("#endereco").val("");

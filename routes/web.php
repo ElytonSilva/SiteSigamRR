@@ -108,6 +108,18 @@ Route::group(['middleware' => 'auth','prefix' => 'admin'], function () {
 
   /*------------------------------------------------------------------------------------------------------*/
 
+
+  /*------------------------ROTAS DE ANOTAÇÕES----------------------------------------------------------------*/
+  
+  Route::get('anotacao/inicio',['as'=>'anotacao.index','uses'=>'AnotacaoController@index']);
+  Route::get('anotacao/adicionar',['as'=>'anotacao.adicionar','uses'=>'AnotacaoController@create']);
+  Route::post('anotacao/salvar',['as'=>'anotacao.store','uses'=>'AnotacaoController@store']);
+  Route::get('anotacao/listar-anotações',['as'=>'anotacao.listar','uses'=> 'AnotacaoController@listaAnotacao']);
+  Route::get('anotacao/lista/visualizar-dados/{id}',['as'=>'anotacao.edit','uses'=>'AnotacaoController@edit']);
+  Route::put('anotacao/lista/atualizar-dados/{id}',['as'=>'anotacao.update','uses'=>'AnotacaoController@update']);
+  Route::get('anotacao/lista/deleteanotacao/{id}',['as'=>'anotacao.destroy','uses'=>'AnotacaoController@destroy']);
+
+  /*------------------------------------------------------------------------------------------------------*/
   
   /*----------------------- ROTAS DE PERFIL ----------------------------------------------------------------------*/
 
