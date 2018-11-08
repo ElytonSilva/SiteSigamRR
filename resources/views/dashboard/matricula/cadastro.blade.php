@@ -131,8 +131,9 @@
 
                         <div class="col s12 m4">
                         <div class="input-field {{$errors->has('endereço') ? 'has-error' : ''}}">
-                            <input type="text" name="endereço" id="endereco" class="validate" value = "{{old('endereço')}}">
-                            <label>Endereço</label>
+                           
+                            <input placeholder="" name="endereço"  id="endereco" id="first_name" type="text" class="validate" value = "{{old('endereço')}}">
+                            <label for="first_name">Endereço</label>
                             @if($errors->has('endereço'))
                             <span class="red-text">
                                 <text>{{$errors->first('endereço')}}</text>
@@ -170,8 +171,9 @@
 
                         <div class="col s12 m4">
                         <div class="input-field {{$errors->has('bairro') ? 'has-error' : ''}}">
-                            <input type="text" name="bairro" id="bairro" class="validate" value = "{{old('bairro')}}">
-                            <label>Bairro</label>
+                           
+                            <input placeholder="" name="bairro"  id="bairro" id="first_name" type="text" class="validate" value = "{{old('bairro')}}">
+                            <label for="first_name">Bairro</label>
                             @if($errors->has('bairro'))
                             <span class="red-text">
                                 <text>{{$errors->first('bairro')}}</text>
