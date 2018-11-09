@@ -45,7 +45,7 @@
                     <p>Realizar Pré-Matricula</p>
                 </div>
                 <div class="card-action">
-                    <a href="#" style="color:white; font-weight:bold;">Entrar</a>
+                    <a href="{{route('prematricula.index')}}" style="color:white; font-weight:bold;">Entrar</a>
                 </div>
             </div>
         </div>
