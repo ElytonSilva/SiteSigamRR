@@ -33,24 +33,22 @@
 
             <p>
                 <strong>Nome do pai: </strong>{{$prematricula->nomepai}}</p>
-            <p>
-                <strong>Contato do Pai: </strong>{{$prematricula->contatopai}} </p>
+            
             <p>
                 <strong>Nome da Mãe: </strong> {{$prematricula->nomemae}}</p>
-            <p>
-                <strong>Contato do Mãe: </strong>{{$prematricula->contatomae}} </p>
+           
             <p>
                 <strong>Nome do Filho(a): </strong>{{$prematricula->nomealuno}} </p>
 				
 			<p>
                 <strong>Senha Gerada: </strong> {{$prematricula->senha}}</p>	
             
-
+        
         </div>
 
     </div>
-	
-	 <div class="secao">
+	<div class = "row"></div>
+	<div class="secao">
         <caption>
             <h2>Documentos para Realização da Matrícula</h2>
         </caption>
@@ -91,6 +89,37 @@
         
 
     </div>
+
+
+    <div class="secao">
+        <caption>
+            <h2>Informações Importante Para Realização da Matricula</h2>
+        </caption>
+
+        @foreach ($anotacoes as $anotacao )
+        <p>
+                <strong>Lembretes: </strong>{{$anotacao->lembrete}} </p>
+        
+            <p>
+
+            <p>
+                <strong>Data: </strong>{{date( 'd/m/Y',strtotime($anotacao->dataInicio))}} </p>
+        
+            <p>
+
+            <p>
+                <strong>Horário Inicio: </strong>{{$anotacao->horaInicio}} </p>
+        
+            <p>
+
+            <p>
+                <strong>Horário Término: </strong>{{$anotacao->horaTermino}} </p>
+        
+            <p>
+        @endforeach
+    
+    
+    </div>    
 
 </body>
 
