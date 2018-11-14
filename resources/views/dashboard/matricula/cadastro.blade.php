@@ -15,6 +15,19 @@
                     <div class="row"></div>
 
                     <div class="row">
+                        <div class="col s12 m12">
+                        <div class="input-field {{$errors->has('user_id') ? 'has-error' : ''}} ">
+                            <input type="text" name="user_id" class="validate" value = "{{old('user_id')}}">
+                            <label>Email de Inscrição</label>
+                            @if($errors->has('user_id'))
+                            <span class="red-text">
+                                <text>{{$errors->first('user_id')}}</text>
+                            </span>
+                            @endif
+
+                        </div>
+                        </div>
+
                         <div class="col s12 m4">
                         <div class="input-field {{$errors->has('nomealuno') ? 'has-error' : ''}} ">
                             <input type="text" name="nomealuno" class="validate" value = "{{old('nomealuno')}}">

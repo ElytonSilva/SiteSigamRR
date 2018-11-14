@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Matricula;
+use App\User;
 use App\Http\Requests\MatriculaRequest;
 class MatriculaController extends Controller
 {
@@ -60,18 +61,20 @@ class MatriculaController extends Controller
             
         ];
         $user = Auth()->user();
-        
-        
+        $user = User::where('email', $request->user_id)->get();
+        if(isset($user)){
         $dados = $request->all();
+        $dados['user_id'] = $user[0]->id;
         
         
         $matricula = Matricula::create($dados);
-
+        
         //return'Cadastrado com Sucesso......';
         return view('dashboard.matricula.confirmacao');
         //return redirect('/admin/matricula')->with('info','Cadastro feito!');
 
-        
+        //dd($dados);
+        }
     }
     public function vermais($id){
         $matricula = Matricula::find($id);
