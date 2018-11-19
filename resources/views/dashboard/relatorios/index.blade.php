@@ -186,7 +186,7 @@ img {
                             <p>Exibir Lista de Renovações</p>
                         </div>
                         <div class="card-action">
-                            <a href="#" style="color:white; font-weight:bold;">Entrar</a>
+                            <a href="{{route('relatorio.renovacao.lista')}}" style="color:white; font-weight:bold;">Entrar</a>
                         </div>
                     </div>
                     <div class="col s4 m4">

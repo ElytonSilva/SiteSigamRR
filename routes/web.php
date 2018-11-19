@@ -95,15 +95,26 @@ Route::group(['middleware' => 'auth','prefix' => 'admin'], function () {
 
   /*-----------------------------------------------------------------------------------------------------------*/
 
+  /*------------------------ROTAS DE ANOTAÇÕES----------------------------------------------------------------*/
+    Route::get('renovacao/inicio',['as'=>'renovacao.index','uses'=>'RenovacaoController@index']);
+    Route::post('renovacao/salvar',['as'=>'renovacao.store','uses'=>'RenovacaoController@store']);
+    
+
+
+  /*-----------------------------------------------------------------------------------------------------------*/
 	
   /*-----------------------ROTAS DE RELATORIOS---------------------------------------------------------------*/
 
   Route::get('relatorios/inicio',['as'=>'relatorios.index','uses'=>'RelatorioController@index']);
-  Route::get('relatorios/listar/cadastrados',['as'=>'relatorios.lista','uses'=> 'RelatorioController@listaPrematricula']);
+  Route::get('relatorios/lista/Prematricula',['as'=>'relatorios.lista','uses'=> 'RelatorioController@listaPrematricula']);
   Route::post('relatorios/lista/cadastrados/busca-prematricula',['as'=>'relatorio.prematricula.buscar','uses'=> 'RelatorioController@BuscarAluno']);
   Route::get('relatorios/lista/Matriculados',['as'=>'relatorios.lista.matriculados','uses'=> 'RelatorioController@listaMatricula']);
-  Route::post('relatorios/lista/cadastrados/busca-matricula',['as'=>'relatorio.matricula.buscar','uses'=> 'RelatorioController@buscaMatricula']);
-  Route::get('relatorios/lista/deletecadastro/{id}',['as'=>'relatorio.prematricula.destroy','uses'=>'RelatorioController@destroy']);
+  Route::post('relatorios/lista/matricula/busca-matricula',['as'=>'relatorio.matricula.buscar','uses'=> 'RelatorioController@buscaMatricula']);
+  Route::get('relatorios/lista/prematricula/deletecadastro/{id}',['as'=>'relatorio.prematricula.destroy','uses'=>'RelatorioController@destroy']);
+  Route::get('relatorios/lista/Renovacao',['as'=>'relatorio.renovacao.lista','uses'=> 'RelatorioController@listaRenovacao']);
+  Route::get('relatorios/lista/Renovacao/visualizar-dados/{id}',['as'=>'renovacao.edit','uses'=>'RelatorioController@editrenovacao']);
+  Route::put('relatorios/lista/Renovacao/atualizar-dados/{id}',['as'=>'renovacao.update','uses'=>'RelatorioController@update']);
+  Route::get('relatorios/lista/renovacao/delete/{id}',['as'=>'relatorio.renovacao.destroy','uses'=>'RelatorioController@renovacaoDestroy']);
   
 
   /*------------------------------------------------------------------------------------------------------*/

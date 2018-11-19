@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\PreMatricula;
 use App\Matricula;
+use App\Renovacao;
+use App\Http\Requests\RenovacaoRequest;
 class RelatorioController extends Controller
 {
     /**
@@ -41,6 +43,16 @@ class RelatorioController extends Controller
             
         ];
         return view('dashboard.relatorios.listamatricula',compact('matriculas','caminhos'));
+    }
+
+    public function listaRenovacao(){
+        $renovacao = Renovacao::all();
+        $caminhos = [
+            ['url'=>'/admin','titulo'=>'Tela Inicial'],
+            ['url'=>'','titulo'=>'Lista de Renovações Solicitadas'],
+            
+        ];
+        return view('dashboard.relatorios.listarenovacao',compact('renovacao','caminhos'));
     }
 
     public function buscaMatricula(Request $request){
@@ -130,9 +142,12 @@ class RelatorioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(RenovacaoRequest $request, $id)
     {
-        //
+        
+        Renovacao::find($id)->update($request->all());
+        
+        return redirect()->route('relatorio.renovacao.lista');
     }
 
     /**
@@ -141,9 +156,25 @@ class RelatorioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+    public function editrenovacao($id)
+    {
+        $user = Auth()->user();
+        $renovacao = Renovacao::find($id);
+
+        return view('dashboard.renovacao.editar',compact('renovacao'));
+    }
+
     public function destroy($id)
     {
         PreMatricula::find($id)->delete();
         return redirect()->route('relatorios.lista');
+    }
+    
+
+    public function renovacaoDestroy($id)
+    {
+        Renovacao::find($id)->delete();
+        return redirect()->route('relatorio.renovacao.lista');
     }
 }

@@ -240,7 +240,7 @@ img {
                 <div class="row">
                     <div class="col s8 m8">
                         <div class="card-content white-text">
-                            <span class="card-title">Pré- Matricula</span>
+                            <span class="card-title">Pré-Matricula</span>
                             <p>Realizar Pré-Matricula</p>
                         </div>
                         <div class="card-action">
@@ -298,7 +298,7 @@ img {
                             <p>Renovar Matricula</p>
                         </div>
                         <div class="card-action">
-                            <a href="#" style="color:white; font-weight:bold;">Entrar</a>
+                            <a href="{{route('renovacao.index')}}" style="color:white; font-weight:bold;">Entrar</a>
                         </div>
                     </div>
                     <div class="col s4 m4">

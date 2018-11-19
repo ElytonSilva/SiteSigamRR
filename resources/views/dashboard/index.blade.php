@@ -41,7 +41,7 @@
         <div class="col s12 m6">
             <div class="card light-blue darken-3">
                 <div class="card-content white-text">
-                    <span class="card-title">Pré- Matricula</span>
+                    <span class="card-title">Pré-Matricula</span>
                     <p>Realizar Pré-Matricula</p>
                 </div>
                 <div class="card-action">
@@ -53,11 +53,11 @@
         <div class="col s12 m6">
             <div class="card red darken-2">
                 <div class="card-content white-text">
-                    <span class="card-title">Matricula</span>
-                    <p>Realizar Matricula</p>
+                    <span class="card-title">Perfil</span>
+                    <p>Editar Perfil</p>
                 </div>
                 <div class="card-action">
-                    <a href="#" style="color:white; font-weight:bold;">Entrar</a>
+                    <a href="{{route('perfil.index')}}" style="color:white; font-weight:bold;">Entrar</a>
                 </div>
             </div>
         </div>
@@ -70,14 +70,10 @@
                     <p>Renovar Matricula</p>
                 </div>
                 <div class="card-action">
-                    <a href="#" style="color:white; font-weight:bold;">Entrar</a>
+                    <a href="{{route('relatorios.index')}}" style="color:white; font-weight:bold;">Entrar</a>
                 </div>
             </div>
         </div>
-
-        
-
-
 
 
     </div>
