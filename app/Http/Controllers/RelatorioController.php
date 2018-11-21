@@ -49,6 +49,7 @@ class RelatorioController extends Controller
         $renovacao = Renovacao::all();
         $caminhos = [
             ['url'=>'/admin','titulo'=>'Tela Inicial'],
+			['url'=>route('relatorios.index'),'titulo'=>'Relatórios'],
             ['url'=>'','titulo'=>'Lista de Renovações Solicitadas'],
             
         ];
