@@ -298,7 +298,7 @@ img {
                             <p>Renovar Matricula</p>
                         </div>
                         <div class="card-action">
-                            <a href="{{route('renovacao.index')}}" style="color:white; font-weight:bold;">Entrar</a>
+                            <a href="{{route('renovacao.teste')}}" style="color:white; font-weight:bold;">Entrar</a>
                         </div>
                     </div>
                     <div class="col s4 m4">

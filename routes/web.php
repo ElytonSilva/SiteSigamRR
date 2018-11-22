@@ -96,7 +96,7 @@ Route::group(['middleware' => 'auth','prefix' => 'admin'], function () {
   /*-----------------------------------------------------------------------------------------------------------*/
 
   /*------------------------ROTAS DE ANOTAÇÕES----------------------------------------------------------------*/
-    Route::get('renovacao/inicio',['as'=>'renovacao.index','uses'=>'RenovacaoController@index']);
+    Route::get('renovacao/inicio',['as'=>'renovacao.teste','uses'=>'RenovacaoController@listardados']);
     Route::post('renovacao/salvar',['as'=>'renovacao.store','uses'=>'RenovacaoController@store']);
     
 
@@ -142,6 +142,7 @@ Route::group(['middleware' => 'auth','prefix' => 'admin'], function () {
 	
 	Route::get('pdf', 'PDFController@gerarpdf');
 
+    //Route::get('', 'RelatorioController@listardados');
 });
 
 

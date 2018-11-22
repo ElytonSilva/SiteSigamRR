@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Renovacao;
+use App\Matricula;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\RenovacaoRequest;
 class RenovacaoController extends Controller
 {
@@ -23,7 +25,13 @@ class RenovacaoController extends Controller
         ];
         return view('dashboard.matricula.lista',compact('renovacao','caminhos'));
     }
+	
+    public function listardados(){
+        $matricula = Matricula::where('user_id', Auth::id())->get();
 
+        //dd($matricula);
+        return view('dashboard.renovacao.teste', compact( 'matricula'));
+    }
 
     public function store(RenovacaoRequest $request){
 
@@ -51,4 +59,6 @@ class RenovacaoController extends Controller
         Renovacao::find($id)->delete();
         return redirect()->route('matricula.lista');
     }
+	
+	
 }
