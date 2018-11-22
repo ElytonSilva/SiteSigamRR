@@ -35,7 +35,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($matriculas as $matricula)
+                @forelse($matriculas as $matricula)
                 <tr>
                     <td> {{$matricula->id}} </td>
                     <td> {{$matricula->nomealuno}} </td>
@@ -62,7 +62,10 @@
                 </tr>
 
 
-                @endforeach
+				@empty
+					
+					<td> Não Existe Matrícula Cadastrada </td>
+				@endforelse
             </tbody>
         </table>
 

@@ -16,7 +16,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($renovacao as $renovac)
+                @forelse($renovacao as $renovac)
                 <tr>
                     <td>{{$renovac->id}} </td>
                     <td>{{$renovac->nomerespo}} </td>
@@ -38,7 +38,10 @@
                     </td>
                     </td>
                 </tr>
-                @endforeach
+                 @empty
+					
+					<td> Não Existe Renovações Cadastrada </td>
+				@endforelse
 
 
                

@@ -36,7 +36,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($prematriculas as $prematricula)
+                @forelse($prematriculas as $prematricula)
                 <tr>
                     <td> {{$prematricula->id}} </td>
                     <td> {{$prematricula->nomealuno}} </td>
@@ -54,7 +54,10 @@
 						</a>
                     </td>
                 </tr>
-                @endforeach
+                @empty
+					
+					<td> Não Existe Pré-Matrícula Cadastrada </td>
+				@endforelse
             </tbody>
         </table>
 
