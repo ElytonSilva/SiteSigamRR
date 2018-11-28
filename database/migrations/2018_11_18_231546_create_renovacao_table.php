@@ -17,7 +17,7 @@ class CreateRenovacaoTable extends Migration
             $table->increments('id');
             $table->string('nomerespo');
             $table->string('nomealuno');
-            $table-> string('status')->default('pendente');
+            $table->string('status')->default('pendente');
             $table->timestamps();
         });
     }

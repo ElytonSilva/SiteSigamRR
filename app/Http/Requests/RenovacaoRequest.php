@@ -34,8 +34,8 @@ class RenovacaoRequest extends FormRequest
     public function rules()
     {
         return [
-            'nomerespo' => 'required|string|max:255',
-            'nomealuno' => 'required|string|max:255',
+            'nomerespo.*' => 'required|string|max:255', 
+			'nomealuno.*' => 'required|string|max:255',
            
         ];
     }
