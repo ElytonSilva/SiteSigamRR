@@ -36,7 +36,7 @@ class CreateMatriculasTable extends Migration
             $table->string('numRG');
             $table->string('orgaoexpedidor');
             $table->date('dataexpedicao');
-            $table->string('cpf')->unique();;
+            $table->string('cpf');
             $table->date('dataMatricula');
             $table->string('alunoBolsaFamlia');
             $table->timestamps();

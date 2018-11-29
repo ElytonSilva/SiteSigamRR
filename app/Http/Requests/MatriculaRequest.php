@@ -74,7 +74,7 @@ class MatriculaRequest extends FormRequest
             'numRG' => 'required',
             'orgaoexpedidor' => 'required|string|max:255',
             'dataexpedicao' => 'required',
-            'cpf' => 'sometimes|required|cpf|unique:matricula',
+            'cpf' => 'sometimes|required|cpf',
             'dataMatricula' => 'required',
             'alunoBolsaFamlia' => 'required|string|max:255',
         ];
