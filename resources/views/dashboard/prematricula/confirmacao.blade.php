@@ -76,7 +76,7 @@
                             <i class="material-icons left">arrow_back_ios</i>
                         </a>
 
-                        <a title="Voltar Para Página Principal" class="btn green right" href="{{route('prematricula.gerarpdf', $prematricula->id)}}" >Gerar Comprovante
+                        <a title="Gerar PDF" class="btn green right" href="{{route('prematricula.gerarpdf', $prematricula->id)}}" >Gerar Comprovante
                                 <i class="material-icons left">file_download</i>
                         </a>
                        

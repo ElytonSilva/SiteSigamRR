@@ -36,13 +36,6 @@
             
             <p>
                 <strong>Nome da Mãe: </strong> {{$prematricula->nomemae}}</p>
-           
-            <p>
-                <strong>Nome do Filho(a): </strong>{{$prematricula->nomealuno}} </p>
-				
-			<p>
-                <strong>Senha Gerada: </strong> {{$prematricula->senha}}</p>	
-            
         
         </div>
 
@@ -89,7 +82,7 @@
         
 
     </div>
-
+	
 
     <div class="secao">
         <caption>
@@ -117,10 +110,23 @@
         
             <p>
         @endforeach
-    
-    
+   
     </div>    
-
+	
+	<div class = "row"></div>
+	<div class = "row"></div>
+	
+	
+	<hr style="border:1px dashed #ccc;" />
+	
+	
+	<p>
+		<strong>Nome do Filho(a): </strong>{{$prematricula->nomealuno}} </p>
+			
+	<p>
+		<strong>Senha Gerada: </strong> {{$prematricula->senha}}</p>	
+            
+	
 </body>
 
 </html>
