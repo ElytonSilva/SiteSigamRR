@@ -30,6 +30,8 @@
                     <th>Serie/Ano</th>
                     <th>Nome da Mãe</th>
                     <th>Nome do Pai</th>
+					<th>Ação</th>
+					
 
 
                 </tr>
@@ -49,14 +51,17 @@
                             <a title="Editar Dados" class="btn orange" href="{{ route('matricula.edit',$matricula->id) }}">
                                 <i class="material-icons">mode_edit</i>
                             </a>
+							
+							<a title="Visualizar restante dos dados" class="btn green " href="{{route('matricula.vermais',$matricula->id)}}">Ver Mais
+                                <i class="material-icons left">list_alt</i>
+                            </a>
+							
                             {{ method_field('DELETE') }} {{ csrf_field() }}
                             <button title="Deletar Matricula" class="btn red">
                                 <i class="material-icons">delete</i>
                             </button>
 
-                            <a title="Visualizar restante dos dados" class="btn green " href="{{route('matricula.vermais',$matricula->id)}}">Ver Mais
-                                <i class="material-icons left">list_alt</i>
-                            </a>
+                            
                         </form>
 			
                     </td>

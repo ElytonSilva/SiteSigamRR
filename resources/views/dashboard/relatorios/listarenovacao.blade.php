@@ -12,6 +12,7 @@
                     <th>Nome do Responsável</th>
                     <th>Nome do Aluno</th>
                     <th>Status</th>
+					<th>Ação</th>
 
                 </tr>
             </thead>
