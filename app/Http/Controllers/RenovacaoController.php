@@ -45,9 +45,6 @@ class RenovacaoController extends Controller
 			Renovacao::create($dado);
 		}
 		
-
-		
-		
         return view('dashboard.renovacao.confirmacao', compact ('renovacao'));
     }
 
