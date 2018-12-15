@@ -6,7 +6,10 @@
 ----------------------------------------------
 Segue os Comandos
 
-Altere o database.php de acordo com as informações do seu banco de dados 
+Altere o arquivo database.php de acordo com as informações do seu banco de dados 
+
+Comente as funções boot e listapermissoes no arquivo AuthServiceProvider.php para não haver erros de permissões ao usar os próximo comandos abaixo :) 
+
 
 php artisan migrate
 
