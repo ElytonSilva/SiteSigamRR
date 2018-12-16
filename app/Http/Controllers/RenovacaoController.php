@@ -21,33 +21,32 @@ class RenovacaoController extends Controller
             ['url'=>'/admin','titulo'=>'Tela Inicial'],
             ['url'=>route('renovacao.index'),'titulo'=>'Renovacao'],
             ['url'=>'','titulo'=>'Lista de Renovações Solicitadas'],
-            
+
         ];
         return view('dashboard.matricula.lista',compact('renovacao','caminhos'));
     }
-	
+
     public function listardados(){
         $matricula = Matricula::where('user_id', Auth::id())->get();
 
-        //dd($matricula);
         return view('dashboard.renovacao.teste', compact( 'matricula'));
     }
 
     public function store(RenovacaoRequest $request){
 
-		
+
 		$user = Auth()->user();
 
         $dados = $request->get('rematricula');
 
 		foreach ($dados as $key => $dado) {
-			
+
 			Renovacao::create($dado);
 		}
-		
 
-		
-		
+
+
+
         return view('dashboard.renovacao.confirmacao', compact ('renovacao'));
     }
 
@@ -64,6 +63,6 @@ class RenovacaoController extends Controller
         Renovacao::find($id)->delete();
         return redirect()->route('matricula.lista');
     }
-	
-	
+
+
 }
