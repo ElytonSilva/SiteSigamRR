@@ -15,24 +15,24 @@
 Route::get('/', function () {
     $slides = [
         (object)[
+            'titulo'=> 'DISCIPLINA',
+            'descricao'=>'Respeito a hierarquia e aos valores familiares',
+            'url'=> '#link',
+            'imagem'=> 'imagens/slide/photo01.jpg'
+        ],
+
+        (object)[
             'titulo'=> 'ENSINO',
-            'descricao'=>'A tecnologia otimizando tarefas',
+            'descricao'=>'Construindo cidadões que amam e valorizam sua patria',
             'url'=> '#link',
-            'imagem'=> 'imagens/slide/slide_01.jpg'
+            'imagem'=> 'imagens/slide/photo02.jpg'
         ],
 
         (object)[
-            'titulo'=> 'COMUNIDADE',
-            'descricao'=>'Disponivel através de várias plataformas',
+            'titulo'=> 'CULTURA',
+            'descricao'=>'Para transformar e mudar, trazendo alegria e conhecimento',
             'url'=> '#link',
-            'imagem'=> 'imagens/slide/slide_02.jpg'
-        ],
-
-        (object)[
-            'titulo'=> 'TECNOLOGIA',
-            'descricao'=>'Para transformar e mudar a vida das pessoas',
-            'url'=> '#link',
-            'imagem'=> 'imagens/slide/slide_03.jpg'
+            'imagem'=> 'imagens/slide/photo03.jpg'
         ]
     ];
     return view('dashboard.index', compact('slides'));
@@ -98,6 +98,7 @@ Route::group(['middleware' => 'auth','prefix' => 'admin'], function () {
   /*------------------------ROTAS DE ANOTAÇÕES----------------------------------------------------------------*/
     Route::get('renovacao/inicio',['as'=>'renovacao.teste','uses'=>'RenovacaoController@listardados']);
     Route::post('renovacao/salvar',['as'=>'renovacao.store','uses'=>'RenovacaoController@store']);
+	
     
 
 

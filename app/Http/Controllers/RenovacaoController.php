@@ -34,19 +34,17 @@ class RenovacaoController extends Controller
 
     public function store(RenovacaoRequest $request){
 
-
+		
 		$user = Auth()->user();
 
         $dados = $request->get('rematricula');
-
+		
+		//dd($dados);
 		foreach ($dados as $key => $dado) {
 
-			Renovacao::create($dado);
+			$renovacao = Renovacao::create($dado);
 		}
-
-
-
-
+	
         return view('dashboard.renovacao.confirmacao', compact ('renovacao'));
     }
 

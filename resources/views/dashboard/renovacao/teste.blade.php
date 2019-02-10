@@ -23,6 +23,7 @@
 								<div class="input-field {{$errors->has('') ? 'has-error' : ''}} ">
 									<label for="produto">Nome do Pai:</label>
 									<input type="text" class="form-control" name="rematricula[{{ $loop->index}}][nomerespo]" value="{{ $matric->nomedopai }}">
+									
 								</div>
 								</div>
 
@@ -61,27 +62,23 @@
 									<i class="material-icons left">arrow_back_ios</i>
 								</a>
 
-								@if(empty($matric->renovacao_id))
 								<button type="submit" class="btn orange darken-4 btn-info right">Confirmar
 									<i class="material-icons left">save</i>
 								</button>
-								@else
-								<button disabled type="submit" class="btn orange darken-4 btn-info right">Confirmar
-									<i class="material-icons left">save</i>
-								</button>
-								@endif
+								
 							</div>
 						</div>
 					@else
 						<div class="row"></div>
 						<div class="row"></div>
-						<p> Desculpe! Página Indisponivel, Você não tem cadastro nessa instituição, Procure a secretaria e faça sua Matrícula </p>
+						<p class="center"> Desculpe! Página Indisponivel, Você não tem cadastro nessa instituição, Procure a secretaria e faça sua Matrícula </p>
 						<div class="row"></div>
 						<div class="row"></div>
 						<div class="row"></div>
 						<div class="row"></div>
+						
 						<a title="Voltar Para Página Principal" class="btn orange darken-4 btn-info left " href="/admin">Voltar
-									<i class="material-icons left">arrow_back_ios</i>
+							<i class="material-icons left">arrow_back_ios</i>
 						</a>
 					@endif
 

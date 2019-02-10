@@ -13,7 +13,5 @@ class Matricula extends Model
         return $this->belongsTo('App\User');
     }
 
-    public function renovacao() {
-        return $this->hasOne('App\Renovacao');
-    }
+   
 }

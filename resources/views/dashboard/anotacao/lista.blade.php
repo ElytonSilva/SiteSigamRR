@@ -1,6 +1,6 @@
 @extends('layouts.app') @section('content')
 <div class="container">
-    <h2 class="center">Lista de Anotações</h2>
+    <h5 class="center">Lista de Anotações</h5>
 
     @include('admin._caminho')
 

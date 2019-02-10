@@ -1,6 +1,6 @@
 @extends('layouts.app') @section('content')
 <div class="container">
-    <h2 class="center">Solicitação Para Renovação</h2>
+    <h5 class="center">Solicitação Para Renovação</h5>
 
     @include('admin._caminho')
 
