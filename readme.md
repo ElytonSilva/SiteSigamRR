@@ -1,6 +1,8 @@
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
+Sistema de gerenciamento escolar para pré matrícula, matrícula, relatórios e avisos.
 
+Utilizado framework laravel 5.4
 ---------------------------------------------        
                    TUTORIAL
 ----------------------------------------------
